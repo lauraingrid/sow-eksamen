@@ -8,3 +8,23 @@
   height: auto;
   display: block;
 }
+
+html {
+  margin: 20px;
+}
+
+/* font til overskrifter */
+@font-face {
+  font-family: "yeldevi";
+  src: url(/src/fonts/Yaldevi/);
+  font-size: normal;
+  font-weight: normal;
+}
+
+/* font til brødtekst */
+@font-face {
+  font-family: "eb";
+  src: url(/src/fonts/EB_Garamond/);
+  font-size: normal;
+  font-weight: normal;
+}
