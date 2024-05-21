@@ -13,6 +13,19 @@ html {
   margin: 20px;
 }
 
+/* Farver */
+
+html {
+  --skrift: #00054e;
+  --blaa: #0009aa;
+  --beige: #945553;
+  --brun: #f54765;
+  --hvid: #ffffff;
+  --sort: #000000;
+}
+
+/* Font styles og størrelser */
+
 /* font til overskrifter */
 @font-face {
   font-family: "yeldevi";
@@ -29,8 +42,7 @@ html {
   font-weight: normal;
 }
 
-/* font størrelser */
-/* til mobil
+/* til mobil */
 
 h1 {
   font-size: 32px;
@@ -48,14 +60,12 @@ h3 {
 }
 
 p {
-  font-size: 16;
+  font-size: 18;
   font-family: "eb";
 }
 
-*/
-
 /* til desktop */
-/*
+
 @media (min-width: 900px) {
   h1 {
     font-size: 48px;
@@ -73,8 +83,7 @@ p {
   }
 
   p {
-    font-size: 18;
+    font-size: 24;
     font-family: "eb";
   }
 }
-*/
