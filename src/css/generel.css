@@ -13,24 +13,37 @@ html {
   margin: 20px;
 }
 
+/* Farver */
+
+/* skriv: "Color: var(--blaa);" for eksempel i jeres css. */
+html {
+  --skrift: #00054e;
+  --blaa: #0009aa;
+  --beige: #945553;
+  --brun: #945553;
+  --hvid: #ffffff;
+  --sort: #000000;
+}
+
+/* Font styles og størrelser */
+
 /* font til overskrifter */
 @font-face {
   font-family: "yeldevi";
-  src: url(/src/fonts/Yaldevi/);
-
+  src: url(/src/fonts/Yaldevi/Yaldevi-VariableFont_wght.ttf);
+  font-style: normal;
   font-weight: normal;
 }
 
 /* font til brødtekst */
 @font-face {
   font-family: "eb";
-  src: url(/src/fonts/EB_Garamond/);
-
+  src: url(/src/fonts/EB_Garamond/EBGaramond-VariableFont_wght.ttf);
+  font-style: normal;
   font-weight: normal;
 }
 
-/* font størrelser */
-/* til mobil
+/* til mobil */
 
 h1 {
   font-size: 32px;
@@ -48,14 +61,12 @@ h3 {
 }
 
 p {
-  font-size: 16;
+  font-size: 18;
   font-family: "eb";
 }
 
-*/
-
 /* til desktop */
-/*
+
 @media (min-width: 900px) {
   h1 {
     font-size: 48px;
@@ -73,8 +84,7 @@ p {
   }
 
   p {
-    font-size: 18;
+    font-size: 24;
     font-family: "eb";
   }
 }
-*/
