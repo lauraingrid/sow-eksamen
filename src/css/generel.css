@@ -15,6 +15,7 @@ html {
 
 /* Farver */
 
+/* skriv: "Color: var(--blaa);" for eksempel i jeres css. */
 html {
   --skrift: #00054e;
   --blaa: #0009aa;
