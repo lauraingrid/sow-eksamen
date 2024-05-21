@@ -20,7 +20,7 @@ html {
   --skrift: #00054e;
   --blaa: #0009aa;
   --beige: #945553;
-  --brun: #f54765;
+  --brun: #945553;
   --hvid: #ffffff;
   --sort: #000000;
 }
@@ -30,16 +30,16 @@ html {
 /* font til overskrifter */
 @font-face {
   font-family: "yeldevi";
-  src: url(/src/fonts/Yaldevi/);
-
+  src: url(/src/fonts/Yaldevi/Yaldevi-VariableFont_wght.ttf);
+  font-style: normal;
   font-weight: normal;
 }
 
 /* font til brødtekst */
 @font-face {
   font-family: "eb";
-  src: url(/src/fonts/EB_Garamond/);
-
+  src: url(/src/fonts/EB_Garamond/EBGaramond-VariableFont_wght.ttf);
+  font-style: normal;
   font-weight: normal;
 }
 
