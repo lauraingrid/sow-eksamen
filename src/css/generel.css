@@ -17,7 +17,7 @@ html {
 @font-face {
   font-family: "yeldevi";
   src: url(/src/fonts/Yaldevi/);
-  font-size: normal;
+
   font-weight: normal;
 }
 
@@ -25,6 +25,56 @@ html {
 @font-face {
   font-family: "eb";
   src: url(/src/fonts/EB_Garamond/);
-  font-size: normal;
+
   font-weight: normal;
 }
+
+/* font størrelser */
+/* til mobil
+
+h1 {
+  font-size: 32px;
+  font-family: "yeldevi";
+}
+
+h2 {
+  font-size: 24px;
+  font-family: "yeldevi";
+}
+
+h3 {
+  font-size: 18px;
+  font-family: "yeldevi";
+}
+
+p {
+  font-size: 16;
+  font-family: "eb";
+}
+
+*/
+
+/* til desktop */
+/*
+@media (min-width: 900px) {
+  h1 {
+    font-size: 48px;
+    font-family: "yeldevi";
+  }
+
+  h2 {
+    font-size: 40px;
+    font-family: "yeldevi";
+  }
+
+  h3 {
+    font-size: 32px;
+    font-family: "yeldevi";
+  }
+
+  p {
+    font-size: 18;
+    font-family: "eb";
+  }
+}
+*/
