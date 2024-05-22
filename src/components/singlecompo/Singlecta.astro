@@ -5,6 +5,44 @@ import "../../css/generel.css"
 <!-- i ovenstående hegn skal du importere css og evt andre komponenter fx knapper -->
 <!-- for at se komponentet så hent det ind på siden og åben over npm localhoast/sidens navn -->
 
-<article></article>
+<article>
+    <div class="grid3">
+      <h3 class="cta3"> Mangler dit hjem eller din arbejdsplads et kunstnerisk udtryk?  </h3>
+      <!-- CTA knap -->
+        <img class="mint_musling" src="/public/svg/mint_illustration.svg" alt="billede af musling">
+    </div>
+  </article>
 
-<style></style>
+
+  <style>
+.cta3{
+  color: var(--skrift);
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 13%;
+}
+img.mint_musling{
+  width: 280px;
+  margin-left: 145px;
+  padding-top: 4%;
+  padding-bottom: 6%;
+}
+
+@media(min-width:900px){
+  .grid3{
+    display: flex;
+    flex-direction: row;
+    padding-top: 5%;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 5%;
+    justify-content: center;
+  }
+  .cta3{
+    width: 50%;
+  }
+  .grid3 img{
+    width: 35%;
+  }
+}
+</style>
