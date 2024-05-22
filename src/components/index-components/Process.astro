@@ -2,10 +2,68 @@
 import "../../css/generel.css";
 ---
 
-<article></article>
+<article>
+  <h2>Sådan arbejder vi</h2>
+
+  <div class="billede">
+    <img src="/svg/perle1.svg" alt="billede af perle 1" width="200" />
+  </div>
+  <p>1. Kontakt os</p>
+  <p>
+    Du kontakter os og beskriver dit projekt. <br />Fortæl gerne om lokation,
+    ønsker til størrelse og lignende.
+  </p>
+  <div class="billede">
+    <img src="/svg/perle2.svg" alt="billede af perle 2" width="200" />
+  </div>
+  <p>2. Dialog om opgaven</p>
+  <p>
+    Vi følger op med nogle spørgsmål, som giver os et bedre indblik i opgavens
+    omfang.
+  </p>
+  <div class="billede">
+    <img src="/svg/perle3.svg" alt="billede af perle 3" width="200" />
+  </div>
+  <p>3. Opstart og planlægning</p>
+  <p>
+    Vi mødes på lokationen, hvor vi lægger en konkret plan og tester
+    farvenuancer.
+  </p>
+  <div class="billede">
+    <img src="/svg/perle3.svg" alt="billede af perle 3" width="200" />
+  </div>
+  <p>4. Den store dag</p>
+  <p>
+    Vi ankommer til lokationen på aftalt dato og bruger én helt dag på at male
+    dit nye evighedsmaleri.
+  </p>
+</article>
 
 <style>
   /*Mobil*/
+
+  h2 {
+    text-align: center;
+    color: var(--blaa);
+    padding-top: 100px;
+  }
+
+  .billede {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+  }
+
+  p {
+    text-align: center;
+    color: var(--blaa);
+    padding-top: 30px;
+  }
+
+  article {
+    background-color: #f9f5f1;
+  }
 
   /*Desktop*/
   @media (min-width: 900px) {
