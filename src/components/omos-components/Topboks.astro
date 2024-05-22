@@ -3,13 +3,23 @@ import "../../css/generel.css";
 ---
 
 <article>
-  <section id="brun_boks">
-    <h1>Carla & Bjørk</h1>
-    <p>Vi hedder Carla og Bjørk, vi er tvillinger, og så er vi 21 år. Vi har har altid malet, tegnet og skabt ting sammen igennem hele vores opvækst, så det har altid været meget naturligt for os at lave noget sammen. I vinteren 2022 malede vi det første loftmaleri, da vores fælles veninder spurgte, om vi ikke godt kunne tænke os at dekorere loftet i hendes krea rum. Vi synes det lød så fedt, med et kæmpe lærred, man bare kunne stå og gå helt amok på. Så vi endte med at male i 10 timer, for vi havde en ide, og ville være færdige samme dag. Og det blev så til det første loftsmaleri, som på mange måder minder, om dem vi maler nu, men som selvfølgelig var meget intuitivt, meget råt og noget vi fandt på undervejs.  Da vi havde malet det, fandt vi ud af at det skulle vi godt nok gøre igen.</p>
-  </section>
-  <section id="portraet">
-    <img src="/public/img/portaet.webp" alt="Portræt af Carla og Bjørk foran et vægmaleri" />
-  </section>
+  <div class="grid">
+    <section id="portraet">
+      <img src="/public/img/portraet.webp" alt="Portræt af Carla og Bjørk foran et vægmaleri" />
+    </section>
+
+    <section id="brun_boks">
+      <h1>Carla & Bjørk</h1>
+      <p>
+        Vi hedder Carla og Bjørk, vi er tvillinger, og så er vi 21 år. Vi har har altid malet, tegnet og skabt ting sammen igennem hele vores opvækst, så det har altid været meget naturligt for os at lave noget sammen. <br />
+        <br />
+        I vinteren 2022 malede vi det første loftmaleri, da vores fælles veninder spurgte, om vi ikke godt kunne tænke os at dekorere loftet i hendes krea rum. Vi synes det lød så fedt, med et kæmpe lærred, man bare kunne stå og gå helt amok på. Så vi endte med at male i 10 timer, for vi havde en ide, og ville være færdige samme dag. <br />
+        <br />
+        Det blev så til det første loftsmaleri, som på mange måder minder, om dem vi maler nu, men som selvfølgelig var meget intuitivt, meget råt og noget vi fandt på undervejs. <br />
+        <br />Da vi havde malet det, fandt vi ud af at det skulle vi godt nok gøre igen.
+      </p>
+    </section>
+  </div>
 </article>
 
 <style>
@@ -18,11 +28,37 @@ import "../../css/generel.css";
     width: 100%%;
   }
   h1 {
+    padding-top: 50px;
     color: var(--hvid);
     text-align: center;
   }
   p {
     color: var(--hvid);
-    margin: 30px;
+    padding: 40px;
+    line-height: 28px;
+  }
+
+  #portraet img {
+    width: 100%;
+  }
+
+  @media (min-width: 900px) {
+    .grid {
+      display: flex;
+      flex-direction: row;
+    }
+
+    #brun_boks {
+      order: 1;
+      width: 50%;
+    }
+
+    #brun_boks p {
+    }
+
+    #portraet {
+      order: 2;
+      width: 50%;
+    }
   }
 </style>
