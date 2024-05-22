@@ -3,19 +3,48 @@ import "../../css/generel.css";
 ---
 
 <article>
-  <h1>Hvem er Some Other Waves</h1>
-  <p>
-    Vi hedder Carla og Bjørk, vi er tvillinger, og så er vi 21 år. Vi har har
-    altid malet, tegnet <br />
-     og skabt ting sammen igennem hele vores opvækst, så det har altid været
-    meget <br /> naturligt for os at lave noget sammen.
-    <br />
-     I vinteren 2022 malede vi det første loftmaleri og er ikke stoppet siden.
-  </p>
+  <div class="tekst">
+    <h2>Hvem er Some Other Waves</h2>
+
+    <p>
+      Vi hedder Carla og Bjørk, vi er tvillinger, og så er vi 21 år. Vi har har
+      altid malet, tegnet og skabt ting sammen igennem hele vores <br />
+      <br />
+       opvækst, så det har altid været meget naturligt for os at lave noget
+      sammen.<br />
+      <br />I vinteren 2022 malede vi det første loftmaleri og er ikke stoppet
+      siden.
+    </p>
+  </div>
 </article>
+<div class="billede">
+  <img src="/img/protraet.webp" alt="billede af kunstnerne" width="550" />
+</div>
 
 <style>
   /*Mobil*/
+
+  .tekst h2 {
+    text-align: center;
+    padding-top: 400px;
+    padding-bottom: 50px;
+    color: var(--skrift);
+  }
+
+  .tekst p {
+    padding-left: 80px;
+    padding-right: 80px;
+    color: var(--skrift);
+  }
+  .billede {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+  }
+
+  img {
+  }
 
   /*Desktop*/
   @media (min-width: 900px) {
