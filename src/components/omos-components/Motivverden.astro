@@ -1,0 +1,79 @@
+---
+import "../../css/generel.css";
+---
+
+<article>
+  <div class="grid">
+    <div class="billede">
+      <img src="/public/img/motivverden.webp" alt="Foto af at pigerne maler deres motiver på et loft" />
+    </div>
+
+    <div class="motivverden">
+      <h2>Motivverden</h2>
+      <p>
+        Siden vi var helt små, har vores forældre taget os rundt i forskellige sommerhuse om sommeren. Der har vi altid gjort en dyd ud af at gå rundt på strandene og lede efter både forstenede søpindsvin, muslinger og skaller. Så det har virkelig været en familie ting. <br />
+        <br />
+        Vi har altid synes, det har været en helt vild æstetik forbundet med de her hav-elementer. Selve menneskekroppene, der kommer ind, er en eller anden form for sammensmeltning af to forskellige stile. Det kom jo meget naturligt, at når vi malede hver for sig, så var det vidt forskellige motiver, men forbundet, sammensmeltet, der maler vi noget der minder om hinanden, og kan næsten ikke selv kende forskel på det, som vi maler på loft og vægge. <br />
+        <br />
+        Så vi er meget inspireret af netop havet og menneskekroppe. Vi ved ikke helt hvordan det kom. Det kom bare ved det første værk, vi skulle male. Det var den ide vi fik, og den har vi holdt ved.
+      </p>
+    </div>
+  </div>
+</article>
+
+<style>
+  article {
+    background-color: var(--beige);
+  }
+
+  .billede {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .billede img {
+    width: 100%;
+    padding: 60px;
+  }
+
+  .motivverden h2 {
+    color: var(--skrift);
+    text-align: center;
+    padding-bottom: 50px;
+  }
+
+  .motivverden {
+    color: var(--skrift);
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media (min-width: 900px) {
+    .grid {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .motivverden {
+      order: 1;
+      width: 50%;
+      padding-left: 100px;
+    }
+
+    .motivverden h2 {
+      padding-top: 90px;
+    }
+
+    .billede {
+      order: 2;
+      width: 50%;
+    }
+
+    .billede img {
+      width: 80%;
+      padding-right: 100px;
+    }
+  }
+</style>

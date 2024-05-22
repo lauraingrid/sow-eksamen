@@ -1,0 +1,62 @@
+---
+import "../../css/generel.css";
+import Knap from "../Knap.astro";
+---
+
+<article>
+  <div class="grid">
+    <div id="illu">
+      <img src="/public/svg/muslinger3.svg" alt="Illustration af muslinger" />
+    </div>
+
+    <div class="book">
+      <h3>Er du interesseret i at få skabt et værk hjemme hos dig, eller på din arbejdsplads?</h3>
+
+      <div class="center-button">
+        <a href="kontakt.astro"><Knap>Kontakt os for et uforpligtende tilbud</Knap></a>
+      </div>
+    </div>
+  </div>
+</article>
+
+<style>
+  #illu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  #illu img {
+    width: 60%;
+    padding: 60px;
+  }
+
+  .book {
+    padding-left: 70px;
+    padding-right: 70px;
+    color: var(--skrift);
+  }
+
+  .center-button {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    padding-bottom: 70px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  @media (min-width: 900px) {
+    .grid {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .book {
+      padding-top: 170px;
+    }
+  }
+</style>
