@@ -5,56 +5,101 @@ import "../../css/generel.css";
 <article>
   <h2>Sådan arbejder vi</h2>
 
-  <div class="billede">
-    <img src="/svg/perle1.svg" alt="billede af perle 1" width="200" />
+  <div class="grid">
+    <div class="boks">
+      <div class="musling">
+        <img src="/svg/perle1.svg" alt="billede af perle 1" width="200" />
+      </div>
+
+      <p>1. Kontakt os</p>
+      <p>
+        Du kontakter os og beskriver dit projekt. <br />Fortæl gerne om
+        lokation, ønsker til størrelse og lignende.
+      </p>
+    </div>
+
+    <div class="boks">
+      <div class="musling">
+        <img src="/svg/perle2.svg" alt="billede af perle 2" width="200" />
+      </div>
+
+      <p>2. Dialog om opgaven</p>
+      <p>
+        Vi følger op med nogle spørgsmål, <br /> som giver os et bedre indblik i
+        opgavens omfang.
+      </p>
+    </div>
+
+    <div class="boks">
+      <div class="musling">
+        <img src="/svg/perle3.svg" alt="billede af perle 3" width="200" />
+      </div>
+
+      <p>3. Opstart og planlægning</p>
+      <p>
+        Vi mødes på lokationen, hvor vi <br /> lægger en konkret plan og tester
+        farvenuancer.
+      </p>
+    </div>
+
+    <div class="boks">
+      <div class="musling">
+        <img src="/svg/perle3.svg" alt="billede af perle 3" width="200" />
+      </div>
+
+      <p>4. Den store dag</p>
+      <p>
+        Vi ankommer til lokationen på aftalt dato <br /> og bruger én helt dag
+        på at male dit nye evighedsmaleri.
+      </p>
+    </div>
   </div>
-  <p>1. Kontakt os</p>
-  <p>
-    Du kontakter os og beskriver dit projekt. <br />Fortæl gerne om lokation,
-    ønsker til størrelse og lignende.
-  </p>
-  <div class="billede">
-    <img src="/svg/perle2.svg" alt="billede af perle 2" width="200" />
-  </div>
-  <p>2. Dialog om opgaven</p>
-  <p>
-    Vi følger op med nogle spørgsmål, som giver os et bedre indblik i opgavens
-    omfang.
-  </p>
-  <div class="billede">
-    <img src="/svg/perle3.svg" alt="billede af perle 3" width="200" />
-  </div>
-  <p>3. Opstart og planlægning</p>
-  <p>
-    Vi mødes på lokationen, hvor vi lægger en konkret plan og tester
-    farvenuancer.
-  </p>
-  <div class="billede">
-    <img src="/svg/perle3.svg" alt="billede af perle 3" width="200" />
-  </div>
-  <p>4. Den store dag</p>
-  <p>
-    Vi ankommer til lokationen på aftalt dato og bruger én helt dag på at male
-    dit nye evighedsmaleri.
-  </p>
 </article>
 
 <style>
   /*Mobil*/
-
   h2 {
     text-align: center;
     color: var(--blaa);
-    padding-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
-
-  .billede {
+  .musling {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 100px;
   }
 
+  .musling img {
+    /* størrelse */
+  }
+
+  .boks {
+    text-align: center;
+    padding: 30px;
+  }
+
+  .boks p {
+    color: var(--blaa);
+  }
+
+  /* 
+  
+
+  
+  }
+/*
+*/
+  .billede img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .billede {
+    padding-top: 100px;
+    gap: 10px;
+    margin-left: 50px;
+  }
   p {
     text-align: center;
     color: var(--blaa);
@@ -63,9 +108,20 @@ import "../../css/generel.css";
 
   article {
     background-color: #f9f5f1;
+    padding-bottom: 100px;
   }
 
   /*Desktop*/
+
   @media (min-width: 900px) {
+    .grid {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .billede {
+      display: flex;
+      flex-direction: column;
+    }
   }
 </style>
