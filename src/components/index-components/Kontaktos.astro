@@ -1,11 +1,55 @@
 ---
 import "../../css/generel.css";
+import Knap from "../Knap.astro";
 ---
 
-<article></article>
+<article>
+  <div class="img1">
+    <img
+      src="/svg/blaakonkylie_illustration.svg"
+      alt="billede af konkylie"
+      width="300"
+    />
+  </div>
+
+  <h2>Kontakt os</h2>
+  <p>
+    Kunne du tænke dig at få et kunstværk hos dig eller din virksomhed? <br />
+     Kontakt os i dag og få et uforpligtene tilbud.
+  </p>
+  <a href="omos.astro"><Knap>Få et uforpligtet tilbud her</Knap></a>
+
+  <div class="img2">
+    <img src="/svg/muslinger2.svg" alt="billede af konkylie" width="300" />
+  </div>
+</article>
 
 <style>
   /*Mobil*/
+
+  h2 {
+    text-align: center;
+    color: var(--skrift);
+    padding-bottom: 40px;
+  }
+
+  p {
+    text-align: center;
+    color: var(--skrift);
+  }
+  .img1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .img2 {
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
+    padding-bottom: 50px;
+  }
 
   /*Desktop*/
   @media (min-width: 900px) {
