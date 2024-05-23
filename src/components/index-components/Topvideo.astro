@@ -3,37 +3,20 @@ import "../../css/generel.css";
 ---
 
 <article>
-  <h1 id="overskrift">SOME OTHER WAVES</h1>
-  <h2 id="intro">
-    Unik evighedskunst på vægge og lofter der liver dit rum op. <br /> Håndmalet
-    af tvillingesøstrene Carla og Bjørk Nørremark.
-  </h2>
+  <div class="video">
+    <video src="/mp4/forsidevideo_1.mp4" autoplay loop muted> </video>
+  </div>
 </article>
 
 <style>
   /*Mobil*/
 
-  /*Fonte*/
-  #overskrift {
-    font-size: 60px;
-    text-align: center;
-    padding-top: 300px;
-  }
-
-  #intro {
-    font-size: 15px;
-    text-align: center;
-    var(--skrift);
+  .video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
   }
 
   /*Desktop*/
-  @media (min-width: 900px) {
-    
-     /*Fonte*/
-      #overskrift {
-    font-size: 100px;
-    text-align: center;
-    padding-top: 300px;
-  }
-  }
 </style>
