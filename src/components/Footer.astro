@@ -1,0 +1,90 @@
+---
+import "./../css/generel.css";
+---
+
+<article>
+  <div class="grid">
+    <div class="kasse">
+      <h3>Om Some Other Waves</h3>
+      <p>
+        Unik evighedskunst på vægge og lofter der liver dit rum op. <br />
+        <br />
+        Håndmalet af tvillingesøstrene Carla og Bjørk Nørremark.
+      </p>
+    </div>
+
+    <div class="kasse">
+      <h3>Kontakt</h3>
+      <p>
+        Kunne du tænke dig at få et kunstværk hos dig eller din virksomhed? <br />
+        <br />Kontakt os idag og få et uforpligente tilbud.
+      </p>
+    </div>
+
+    <div class="kasse">
+      <h3>Følg os</h3>
+      <p>Se mere om vores projekter på vores sociale medier</p>
+      <div class="someicons">
+        <ion-icon name="logo-instagram"></ion-icon>
+        <ion-icon name="logo-facebook"></ion-icon>
+      </div>
+    </div>
+  </div>
+</article>
+
+<style>
+  article {
+    background-color: var(--skrift);
+  }
+
+  h3,
+  p {
+    color: var(--beige);
+  }
+
+  h3 {
+    font-size: 22px;
+    padding-bottom: 20px;
+  }
+
+  p {
+    font-size: 15px;
+    padding-top: 15px;
+  }
+
+  .kasse {
+    padding: 20px;
+    max-width: 500px;
+    padding-left: 50px;
+  }
+
+  .grid {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  ion-icon {
+    color: var(--beige);
+    font-size: 40px;
+    width: 13%;
+  }
+
+  ion-icon:hover {
+    color: #b9cdff;
+    cursor: pointer;
+  }
+
+  .someicons {
+    padding: 40px 0;
+  }
+  @media (min-width: 900px) {
+    .grid {
+      display: flex;
+      flex-direction: row;
+      padding-top: 50px;
+    }
+  }
+</style>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
