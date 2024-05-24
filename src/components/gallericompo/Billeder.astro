@@ -8,66 +8,87 @@ import "../../css/generel.css"
 
 <!-- img'er nedenfor er kun placeholder billeder -->
 <article>
-    <div class="gallerigrid">
-      <div class="img1">
-        <img src="/public/img/portaet.webp" alt="billede af maleri">
-      </div>
-      <div class="img2">
-        <img src="/public/img/portaet.webp" alt="billede af maleri">
-      </div>
-      <div class="img3">
-        <img src="/public/img/portaet.webp" alt="billede af maleri">
-      </div>
-      <div class="img4">
-        <img src="/public/img/portaet.webp" alt="billede af maleri">
-      </div>
-      <div class="img5">
-        <img src="/public/img/portaet.webp" alt="billede af maleri">
-      </div>
-      <div class="img6">
-        <img src="/public/img/portaet.webp" alt="billede af maleri">
-      </div>
-      <div class="img7">
-        <img src="/public/img/portaet.webp" alt="billede af maleri">
-      </div>
-      <div class="img8">
-        <img src="/public/img/portaet.webp" alt="billede af maleri">
-      </div>
-      <div class="img9">
-        <img src="/public/img/portaet.webp" alt="billede af maleri">
-      </div>
-      <div class="img10">
-        <img src="/public/img/portaet.webp" alt="billede af maleri">
-      </div>
-      <div class="img11">
-        <img src="/public/img/portaet.webp" alt="billede af maleri">
-      </div>
-      <div class="img12">
-        <img src="/public/img/portaet.webp" alt="billede af maleri">
-      </div>
+  <div class="billederindhold">
+    <div class="gallerih1">
+      Vores Galleri
     </div>
+    <div class="gallerigrid">
+      <div class="img">
+        <img src="/public/img/portaet.webp" alt="billede af maleri">
+      </div>
+      <div class="img">
+        <img src="/public/img/portaet.webp" alt="billede af maleri">
+      </div>
+      <div class="img">
+        <img src="/public/img/portaet.webp" alt="billede af maleri">
+      </div>
+      <div class="img">
+        <img src="/public/img/portaet.webp" alt="billede af maleri">
+      </div>
+      <div class="img">
+        <img src="/public/img/portaet.webp" alt="billede af maleri">
+      </div>
+      <div class="img">
+        <img src="/public/img/portaet.webp" alt="billede af maleri">
+      </div>
+      <div class="img">
+        <img src="/public/img/portaet.webp" alt="billede af maleri">
+      </div>
+      <div class="img">
+        <img src="/public/img/portaet.webp" alt="billede af maleri">
+      </div>
+      <div class="img">
+        <img src="/public/img/portaet.webp" alt="billede af maleri">
+      </div>
+  </div>
+  </div>
   </article>
 
 
 <style>
+   .billederindhold{
+      padding-top: 120%;
+    }
     .gallerigrid{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1%;
     padding-left: 3%;
     padding-right: 3%;
-    padding-top: 1%;
+    padding-top: 4%;
   }
+
   .gallerigrid img{
     width: 100%;
     height: 100%;
+    padding: 2%;
   }
-
+  .gallerih1{
+    color: var(--skrift);
+    text-align: center;
+  }
+  .gallerigrid{
+    /* padding-bottom: 10%; */
+    padding-left: 3%;
+    padding-right: 3%;
+  }
 
   @media (min-width: 900px){
     .gallerigrid{
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
+      padding-left: 6%;
+      padding-right: 6%;
     }
+    .billederindhold{
+      padding-top: 45%;
+    }
+
+
+
+
+
+
+
+
   }
 </style>

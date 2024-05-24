@@ -6,28 +6,82 @@ import "../../css/generel.css"
 <!-- for at se komponentet så hent det ind på siden og åben over npm localhoast/sidens navn -->
 
 <article>
-    <div class="samarbejde_grid">
-        <h1>Samarbejde</h1>
-        <div class="samarbejdeimg">
-          <img src="/public/img/portaet.webp" alt="billede af sæbeflaske">
-        </div>
+  <h1 class="samarbejdeh1">Samarbejde</h1>
+  <div class="samarbejde_grid">
+      <div class="samarbejdeimg">
+        <img src="/public/img/portaet.webp" alt="billede af sæbeflaske">
+      </div>
+      <div class="samarbejdetxt">
         <h2>Klint</h2>
         <p>Når skønhedspleje og kunst mødes og forenes. 
-            Skønhedsmærket Klint og det kreative duo bag Some Other Waves har sammen kombineret det bedste fra skønhed og kunst for at skabe produktserien 'Movable Ocean' – en serie skønhedsprodukter med et kunstnerisk udtryk. 
-            Læs mere om samarbejdet mellem Klint og Some Other Waves og udforsk deres 'Movable Ocean' serie her.</p>
-    </div>
-    <div class="knap"></div>
+            Skønhedsmærket Klint <br>og det kreative duo bag Some Other Waves har sammen kombineret det bedste fra skønhed og kunst for at skabe produktserien 'Movable Ocean' – en serie skønhedsprodukter med et kunstnerisk udtryk. <br>
+            <br>Læs mere om samarbejdet mellem Klint og Some Other Waves og udforsk deres 'Movable Ocean' serie her.</p>
+      </div>
+  </div>
+  <div class="knap"></div>
 </article>
 
+
+
+
 <style>
- .samarbejdeimg{
-  object-fit: cover;
-  width: 50%;
-  height: 50%;
-  margin-left: 10px;
-  margin-right: 10px;
-
-
+.samarbejdeimg img{
+    object-fit: cover;
+    width: 473px;
+    height: 407px;
+    padding-right: 0%;
+    padding-bottom: 9%;
+    padding-top: 8%;
+    padding-left: 6%;
 }
+.samarbejdeh1{
+  color: var(--skrift);
+  padding-left: 4%;
+  padding-bottom: 2%;
+  padding-top: 6%;
+}
+.samarbejde_grid h2{
+  color: var(--skrift);
+  padding-left: 7%;
+  padding-bottom: 4%;
+}
+.samarbejde_grid p{
+  color: var(--skrift);
+  padding-left: 7%;
+  padding-right: 5%;
+}
+article{
+    padding-bottom: 18%;
+    padding-top: 10%;
+  }
+
+
+@media (min-width:900px){
+  .samarbejde_grid{
+    display: flex;
+    flex-direction: row;
+    padding-top: 2%;
+    margin-left: 60px;
+  }
+  .samarbejdeimg img{
+    padding-left: 2%;
+  }
+
+  .samarbejdeimg {
+    width: 50%;
+  }
+  .samarbejdetxt{
+    width: 50%;
+    padding-right: 6%;
+    padding-top: 7%;
+   
+  }
+
+  article{
+    padding-bottom: 5%;
+    padding-top: 4%;
+  }
+}
+
     
 </style>
