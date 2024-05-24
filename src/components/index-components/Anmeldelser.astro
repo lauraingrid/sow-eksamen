@@ -3,9 +3,232 @@ import "../../css/generel.css";
 ---
 
 <article>
-  <h2>Anmeldelser</h2>
+  <section class="boks_center">
+    <h2>Anmeldelser</h2>
+    <div class="boks_scroll">
+      <div class="boks1">
+        <p>
+          “Jeg kan slet ikke forstå, hvordan jeg har kunne leve uden det her <br
+          />
+           loftsmaleri af Some Other Waves. De har malet i frihånd <br /> og
+          brugte under én dag.”
+        </p>
+        <p class="navn">Sofie Linde</p>
+      </div>
+      <div class="boks2">
+        <p>
+          “Det har virkelig tilføjet en unik og kreativ dimension til vores
+          butik ... Det var vigtigt for os at samarbejde med nogen, der kunne
+          skabe noget både æstetisk og meningsfuldt.”
+        </p>
+        <p class="navn">Østerbro Optik</p>
+      </div>
+      <div class="boks3">
+        <p>
+          “Det var magisk at opleve Some Other Waves dekorere vores showroom”
+        </p>
+        <p class="navn">Bent Hansen Design</p>
+      </div>
+      <div class="boks4">
+        <p>
+          “Tilbage i alle religioner har der været udsmykning i loft - kirker,
+          pyramider, kloster m.m. og Some Other Waves (SOW) har i vores øjne
+          formået at bringe den form for kunst i spil igen.”
+        </p>
+        <p class="navn">Dyrelægegården Mariendal</p>
+      </div>
+    </div>
+    <div class="pile">
+      <img src="/svg/pile.svg" alt="billede af pile" />
+    </div>
+  </section>
+</article>
+<style>
+  @media (min-width: 900px) {
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 3.2rem;
+    }
 
-  <div class="boks1">
+    .boks_scroll {
+      display: flex;
+      align-items: center;
+      overflow-x: scroll;
+      scroll-snap-type: x mandatory;
+    }
+    .navn {
+      padding-top: 70px;
+      padding-bottom: 20px;
+      font-weight: bold;
+    }
+
+    p {
+      color: var(--blaa);
+      padding-top: 20px;
+      width: 200px;
+      height: 100px;
+    }
+
+    h2 {
+      text-align: center;
+      color: var(--blaa);
+      padding-top: 50px;
+      padding-bottom: -50px;
+    }
+
+    .boks1 {
+      text-align: center;
+      background-color: #e0e9ff;
+      border: 1px solid lightblue;
+      border-radius: 20px;
+      padding: 10px;
+      padding-left: 100px;
+      padding-right: 100px;
+      margin: 80px;
+      margin-right: 20px;
+      margin-top: 70px;
+    }
+
+    .boks2 {
+      text-align: center;
+      background-color: E0E9FF;
+      border: 1px solid lightblue;
+      border-radius: 20px;
+      padding: 10px;
+      padding-left: 100px;
+      padding-right: 100px;
+      margin: 80px;
+    }
+
+    .boks3 {
+      text-align: center;
+      background-color: lightblue;
+      border: 1px solid lightblue;
+      border-radius: 20px;
+      padding: 10px;
+      padding-left: 100px;
+      padding-right: 100px;
+      margin: 80px;
+    }
+
+    .boks3 .navn {
+      padding-top: 0px;
+    }
+
+    .boks3 p {
+      padding-bottom: 0;
+    }
+
+    .bok .boks4 {
+      text-align: center;
+      background-color: lightblue;
+      border: 1px solid lightblue;
+      border-radius: 20px;
+      padding: 10px;
+      padding-left: 100px;
+      padding-right: 100px;
+      margin: 80px;
+    }
+
+    .pile {
+      display: flex;
+      justify-content: center;
+      padding-left: 30px;
+      padding-bottom: 40px;
+    }
+  }
+
+  /*Mobil*/
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+
+  .boks_scroll {
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  }
+  .navn {
+    padding-top: 70px;
+    padding-bottom: 20px;
+    font-weight: bold;
+  }
+
+  .pile {
+    display: flex;
+    justify-content: center;
+    padding-left: 30px;
+    padding-bottom: 40px;
+  }
+  p {
+    color: var(--blaa);
+    padding-top: 20px;
+    width: 200px;
+    height: 100px;
+  }
+
+  h2 {
+    text-align: center;
+    color: var(--blaa);
+    padding-top: 50px;
+    padding-bottom: -50px;
+  }
+
+  .boks1 {
+    text-align: center;
+    background-color: lightblue;
+    border: 1px solid lightblue;
+    border-radius: 20px;
+    padding: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: 80px;
+    margin-right: 20px;
+    margin-top: 70px;
+  }
+
+  .boks2 {
+    text-align: center;
+    background-color: lightblue;
+    border: 1px solid lightblue;
+    border-radius: 20px;
+    padding: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: 80px;
+  }
+
+  .boks3 {
+    text-align: center;
+    background-color: lightblue;
+    border: 1px solid lightblue;
+    border-radius: 20px;
+    padding: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: 80px;
+  }
+  .boks4 {
+    text-align: center;
+    background-color: lightblue;
+    border: 1px solid lightblue;
+    border-radius: 20px;
+    padding: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: 80px;
+  }
+</style>
+
+<!-- <div class="boks1">
     <p>
       “Jeg kan slet ikke forstå, hvordan jeg har kunne leve uden det her <br />
        loftsmaleri af Some Other Waves. De har malet i frihånd <br /> og brugte
@@ -38,71 +261,11 @@ import "../../css/generel.css";
     </p>
     <p class="navn">Dyrelægegården Mariendal</p>
   </div>
-</article>
+</article> -->
 
-<style>
-  /*Mobil*/
+<!-- <style>
+    /*Mobil*/
 
-  h2 {
-    text-align: center;
-    color: var(--blaa);
-    padding-top: 50px;
-    padding-bottom: -50px;
-  }
-  .boks1 {
-    text-align: center;
-    background-color: lightblue;
-    border: 1px solid lightblue;
-    border-radius: 20px;
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 180px;
-    margin-top: 70px;
-  }
-
-  .boks2 {
-    text-align: center;
-    background-color: lightblue;
-    border: 1px solid lightblue;
-    border-radius: 20px;
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 180px;
-  }
-
-  .boks3 {
-    text-align: center;
-    background-color: lightblue;
-    border: 1px solid lightblue;
-    border-radius: 20px;
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 180px;
-  }
-  .boks4 {
-    text-align: center;
-    background-color: lightblue;
-    border: 1px solid lightblue;
-    border-radius: 20px;
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 180px;
-  }
-
-  .navn {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-
-  p {
-    color: var(--blaa);
-    padding-top: 20px;
-  }
-  /*Desktop*/
-  @media (min-width: 900px) {
-  }
-</style>
+   
+   
+    } -->
