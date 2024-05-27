@@ -1,0 +1,81 @@
+---
+import "../../css/generel.css";
+import Knap from "../Knap.astro";
+---
+
+<!-- i ovenstående hegn skal du importere css og evt andre komponenter fx knapper --><!-- for at se komponentet så hent det ind på siden og åben over npm localhoast/sidens navn -->
+<article>
+  <div class="ctagrid">
+    <div class="cta_txt_knap">
+      <h2>Drømmer du om at få et kunstværk til dit hjem eller din arbejdsplads?</h2>
+      <div class="center-button">
+        <a href="kontakt.astro"><Knap>Læs mere</Knap></a>
+      </div>
+    </div>
+    <div class="ctaillustration">
+      <img src="/public/svg/lysserod_illustration.svg" alt="lyserød illustration" />
+    </div>
+  </div>
+</article>
+
+<style>
+  .cta_txt_knap h2 {
+    color: var(--skrift);
+    text-align: center;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    padding-left: 7%;
+    padding-right: 7%;
+    line-height: 150%;
+  }
+
+  .cta_txt_knap p {
+    text-align: center;
+    padding-bottom: 10%;
+  }
+
+  .ctaillustration img {
+    width: 50%;
+    transform: rotate(65deg);
+  }
+
+  .ctaillustration {
+    padding-left: 37%;
+    /* padding-bottom: 20%; */
+  }
+
+  .center-button {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    padding-bottom: 70px;
+  }
+
+  @media (min-width: 900px) {
+    .ctagrid {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .ctaillustration {
+      padding-left: 10%;
+      /* padding-bottom: 20%; */
+      width: 45%;
+      padding-top: 3.5%;
+    }
+    .cta_txt_knap {
+      width: 50%;
+    }
+    article {
+      padding-top: 4%;
+      padding-left: 4%;
+    }
+
+    /* .ctaillustration img{
+    width: 240%;
+
+    
+} */
+  }
+</style>

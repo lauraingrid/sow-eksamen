@@ -1,0 +1,209 @@
+---
+import Header from "../../components/Header.astro";
+import Kundeinfo from "../../components/singlecompo/Kundeinfo.astro";
+import Singlecta from "../../components/singlecompo/Singlecta.astro";
+import Singlecitat from "../../components/singlecompo/Singlecitat.astro";
+import Footer from "../../components/Footer.astro";
+
+import "../../css/generel.css";
+
+export async function getStaticPaths() {
+  const data = await fetch("https://vmhyyycabwkqiceqvlmp.supabase.co/rest/v1/sow_data", {
+    method: "GET",
+    headers: {
+      apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZtaHl5eWNhYndrcWljZXF2bG1wIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTYzOTQ5MTMsImV4cCI6MjAzMTk3MDkxM30.VNbRC_IKM6y8R7OiRbnDU5rELxNMETR6WVXkjUjDz7c",
+    },
+  }).then((response) => response.json());
+
+  return data.map((kunde) => {
+    return {
+      params: { id: kunde.id },
+      props: { myData: kunde },
+    };
+  });
+}
+
+const { myData } = Astro.props;
+---
+
+<!-- for at dataen kan skrive æ ø og å er dette sat ind -->
+<meta charset="UTF-8" />
+
+<article>
+  <Header />
+
+  <!-- Kundeinfo -->
+  <article>
+    <div class="grid1">
+      <img src={"/img/" + myData.image} alt="billede af værk" />
+      <div class="grid1txt">
+        <h1>{myData.navn}</h1>
+        <br />
+        <p>{myData.info}</p>
+        <p>{myData.hvor}</p>
+      </div>
+    </div>
+  </article>
+
+  <!-- Citatsektion -->
+  <article class="afsnit2">
+    <div class="grid">
+      <div class="kundecitat">
+        <div class="txt2">
+          <p>
+            <br /><div class="citationstegn">"</div>
+            {myData.citat}
+            <br />
+            <br />
+            <div class="citationstegn2">"</div>
+          </p>
+          <p class="txt2_1">- {myData.citataf}</p>
+        </div>
+        <img src="/public/svg/muslinger1.svg" alt="muslinger" />
+      </div>
+    </div>
+  </article>
+
+  <!-- CTA afsnit -->
+  <Singlecta />
+  <Footer />
+</article>
+
+<!-- Style til kundeinfo -->
+
+<style>
+  .grid1 {
+    color: var(--skrift);
+    padding-left: 5%;
+  }
+
+  .grid1 img {
+    padding-right: 5%;
+    padding-bottom: 9%;
+    padding-top: 8%;
+    object-fit: cover;
+    width: 487px;
+    height: 487px;
+  }
+
+  .grid1 p {
+    line-height: 30px;
+  }
+
+  .grid1 h1 {
+    padding-bottom: 5%;
+  }
+
+  @media (min-width: 900px) {
+    .grid1 {
+      display: flex;
+      flex-direction: row;
+      margin-left: 5%;
+      gap: 3%;
+    }
+
+    .grid1 h1 {
+      padding-top: 25%;
+      padding-left: 10%;
+    }
+    .grid1 p {
+      padding-left: 10%;
+      line-height: 30px;
+    }
+    .grid1 img {
+      object-fit: cover;
+      width: 800px;
+      height: 800px;
+    }
+
+    .grid1txt {
+      margin-top: 40px;
+      padding-right: 5%;
+    }
+  }
+</style>
+
+<!-- Style til kundecitat -->
+
+<style>
+  article.afsnit2 {
+    background-color: var(--beige);
+    margin-top: 60px;
+    padding-top: 10%;
+    padding-bottom: 14%;
+  }
+  .kundecitat p {
+    text-align: center;
+    color: var(--skrift);
+    padding-bottom: 4%;
+  }
+  .kundecitat img {
+    margin-left: 90px;
+    padding-top: 15%;
+    width: 50%;
+    height: 50%;
+  }
+  .citationstegn {
+    font-size: 35px;
+    color: var(--skrift);
+  }
+  .citationstegn2 {
+    font-size: 35px;
+    color: var(--skrift);
+  }
+  .txt2 {
+    text-align: center;
+    color: var(--skrift);
+    font-size: 18px;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-style: italic;
+  }
+
+  .txt2_1 {
+    font-style: normal;
+  }
+
+  @media (min-width: 900px) {
+    .kundecitat {
+      display: flex;
+      flex-direction: row;
+      gap: 4%;
+      justify-content: center;
+      color: var(--skrift);
+      font-size: 20px;
+      margin-top: -40px;
+    }
+    .txt2 {
+      order: 2;
+      width: 50%;
+      text-align: center;
+      padding-left: 5%;
+    }
+
+    .kundecitat img {
+      order: 1;
+      width: 24%;
+      margin-top: -230px;
+    }
+    article.afsnit2 {
+      padding-bottom: 7%;
+      padding-top: 10%;
+    }
+    .txt2_1 {
+      padding-top: 20px;
+    }
+    .kundecitat p {
+      font-size: 20px;
+      padding-bottom: 2%;
+    }
+    .citationstegn {
+      font-size: 30px;
+      color: var(--skrift);
+    }
+    .citationstegn2 {
+      font-size: 30px;
+      color: var(--skrift);
+    }
+  }
+</style>
