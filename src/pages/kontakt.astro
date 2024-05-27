@@ -1,6 +1,8 @@
+
 ---
 import MainLayout from "../layout/MainLayout.astro";
 import Header from "../components/Header.astro";
+import Process from "../components/index-components/Process.astro";
 import Linjer from "../components/kontaktcomponent/Linjer.astro";
 import Linj from "../components/kontaktcomponent/Linj.astro";
 import Footer from "../components/Footer.astro";
@@ -9,12 +11,36 @@ import Footer from "../components/Footer.astro";
 
 <MainLayout>
   <Header />
+  
+  <h1>Send din forespørgsel her</h1>
+  <p>Om du ønsker et smukt maleri i dit hjem, eller på din arbejdsplads, står vi klar til at tage imod din forspørgsel her</p>
+  <img src="../public/svg/kontaktillustration.svg" alt="Illustration">
+
+  <Process />
+
   <section class="faq_wrapper">
-    <h2>Oftest stillede spørgsmål</h2>
+    <h3>Oftest stillede spørgsmål</h3>
   <Linj />
   <Linjer topic="Hvilken maling maler i med?" text="Vi maler med acryl-vægmaling fra Beck & Jørgensen med EU Ecolabel " statusOpen={true}/>
 <Linj />
+<Linjer topic="Maler I i hele Danmark?" text="Vi maler med acryl-vægmaling fra Beck & Jørgensen med EU Ecolabel " statusOpen={true}/>
+<Linj />
+<Linjer topic="Maler i også udendørs?" text="Vi maler med acryl-vægmaling fra Beck & Jørgensen med EU Ecolabel " statusOpen={true}/>
+<Linj />
+<Linjer topic="Kan man selv vælge baggrundsfarve?" text="Vi maler med acryl-vægmaling fra Beck & Jørgensen med EU Ecolabel " statusOpen={true}/>
+<Linj />
+<Linjer topic="Hvem sørger for materialer?" text="Vi maler med acryl-vægmaling fra Beck & Jørgensen med EU Ecolabel " statusOpen={true}/>
+<Linj />
+<Linjer topic="Hvad skal jeg have klar inden i kommer?" text="Vi maler med acryl-vægmaling fra Beck & Jørgensen med EU Ecolabel " statusOpen={true}/>
+<Linj />
+<Linjer topic="Hvor lang tid ventetid er der?" text="Vi maler med acryl-vægmaling fra Beck & Jørgensen med EU Ecolabel " statusOpen={true}/>
+<Linj />
+<Linjer topic="Kan man have indflydelse på farver og motiver I maler?" text="Vi maler med acryl-vægmaling fra Beck & Jørgensen med EU Ecolabel " statusOpen={true}/>
+<Linj />
+
 </section>
+
+
 <Footer />
 </MainLayout>
 
@@ -23,8 +49,8 @@ import Footer from "../components/Footer.astro";
   margin: 12rem;
     }
 
-    h2{
-      margin-bottom: 1rem;
+    h3{
+      margin-bottom: 1.5rem;
     }
 
 </style>
@@ -32,4 +58,5 @@ import Footer from "../components/Footer.astro";
 <script>
   import "/public/scripts/linjer.js";
 </script>
+
 
