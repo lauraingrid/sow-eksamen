@@ -1,73 +1,86 @@
 ---
-import "../../css/generel.css"
+import "../../css/generel.css";
+
+export async function getStaticPaths() {
+  const data = await fetch("https://vmhyyycabwkqiceqvlmp.supabase.co/rest/v1/sow_data", {
+    method: "GET",
+    headers: {
+      apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZtaHl5eWNhYndrcWljZXF2bG1wIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTYzOTQ5MTMsImV4cCI6MjAzMTk3MDkxM30.VNbRC_IKM6y8R7OiRbnDU5rELxNMETR6WVXkjUjDz7c",
+    },
+  }).then((response) => response.json());
+
+  return data.map((kunde) => {
+    return {
+      params: { id: kunde.id },
+      props: { myData: kunde },
+    };
+  });
+}
+
+const { myData } = Astro.props;
 ---
 
-<!-- i ovenstående hegn skal du importere css og evt andre komponenter fx knapper -->
-<!-- for at se komponentet så hent det ind på siden og åben over npm localhoast/sidens navn -->
-
+<!-- i ovenstående hegn skal du importere css og evt andre komponenter fx knapper --><!-- for at se komponentet så hent det ind på siden og åben over npm localhoast/sidens navn -->
 <article>
-    <div class="grid1">
-      <img src="/public/img/kundeimg.webp" alt="billede af kunstværk">
-      <div class="grid1txt">
-        <h1>Østerbro Optik</h1> <br> 
-        <p>
-          Dette loftsmaleri er skabt til Østerbro Optik og præsenterer vores signatur motiver. <br>Farveskemaet omfatter hovedsageligt neutrale toner, suppleret med elementer af rød, blå og lyserød, der tilsammen fremhæver vores kunstneriske identitet.
-          <br> <br>Loftsmaleriet kan ses i Østerbro Optik på adressen <br>Østerbrogade 102, 2100 København.
-          </p>
-      </div>
+  <div class="grid1">
+    <img src="/public/img/kundeimg.webp" alt="billede af kunstværk" />
+    <div class="grid1txt">
+      <h1>{myData.navn}</h1>
+      <br />
+      <p>{myData.info}</p>
+      <p>{myData.hvor}</p>
     </div>
-  </article>
+  </div>
+</article>
 
-
-  
-  <style>
-    .grid1{
-  color: var(--skrift);
-  padding-left: 5%;
-}
-
-.grid1 img{
-padding-right: 5%;
-padding-bottom: 9%;
-padding-top: 8%; 
-object-fit: cover;
-width: 487px;
-height: 487px;
-}
-
-.grid1 p{
- line-height: 30px;
-}
-
-.grid1 h1{
-  padding-bottom: 5%;
-}
-
-@media (min-width:900px) {
-  .grid1{
-    display: flex;
-    flex-direction: row;
-    margin-left: 5%;
-    gap: 3%;
+<style>
+  .grid1 {
+    color: var(--skrift);
+    padding-left: 5%;
   }
 
-  .grid1 h1{
-    padding-top: 25%;
-    padding-left: 10%;
+  .grid1 img {
+    padding-right: 5%;
+    padding-bottom: 9%;
+    padding-top: 8%;
+    object-fit: cover;
+    width: 487px;
+    height: 487px;
   }
-  .grid1 p{
-    padding-left: 10%;
+
+  .grid1 p {
     line-height: 30px;
   }
-  .grid1 img{
-  object-fit: cover;
-  width: 800px;
-  height: 800px;
+
+  .grid1 h1 {
+    padding-bottom: 5%;
   }
 
-  .grid1txt{
-    margin-top: 40px;
-    padding-right: 5%;
+  @media (min-width: 900px) {
+    .grid1 {
+      display: flex;
+      flex-direction: row;
+      margin-left: 5%;
+      gap: 3%;
+    }
+
+    .grid1 h1 {
+      padding-top: 25%;
+      padding-left: 10%;
+    }
+    .grid1 p {
+      padding-left: 10%;
+      line-height: 30px;
+    }
+    .grid1 img {
+      object-fit: cover;
+      width: 800px;
+      height: 800px;
+    }
+
+    .grid1txt {
+      margin-top: 40px;
+      padding-right: 5%;
+    }
   }
-}
-  </style>
+</style>

@@ -1,75 +1,67 @@
 ---
-import "../../css/generel.css"
+import "../../css/generel.css";
+import Knap from "../Knap.astro";
 ---
 
-<!-- i ovenstående hegn skal du importere css og evt andre komponenter fx knapper -->
-<!-- for at se komponentet så hent det ind på siden og åben over npm localhoast/sidens navn -->
-
-  <!-- article for interview afsnit 1 -->
+<!-- i ovenstående hegn skal du importere css og evt andre komponenter fx knapper --><!-- for at se komponentet så hent det ind på siden og åben over npm localhoast/sidens navn --><!-- article for interview afsnit 1 -->
 <article class="interviewindhold">
-    <h1 class="interviewh1">Interviews</h1>
-    <div class="interview_grid">
-        <div class="interviewimg">
-          <img src="/public/img/magasin.webp" alt="billede af piger">
-        </div>
-        <div class="interviewtxt">
-          <h2>Magasin</h2>
-          <p>Bæredygtighed i kunst er fundamentet for Some Other Waves' værk, hvilket afspejles i deres samarbejde med Magasin i tråd med kampagnen 'Make the most of it'.
-            Et bæredygtigt initiativ, der giver Some Other Waves mulighed for at give nyt liv til gammelt tøj med deres karakteristiske og farverige motiver.
-            I et særligt interview med Magasin og Some Other Waves udforskes samarbejdet samt essensen af konceptet 'evighedskunst'. <br> <br> Læs interview med Magasin og Some Other Waves her.
-            </p>
-            <p class="interview1knap">Knap</p>
-        </div>
+  <h1 class="interviewh1">Interviews</h1>
+  <div class="interview_grid">
+    <div class="interviewimg">
+      <img src="/public/img/magasin.webp" alt="billede af piger" />
     </div>
-    <div class="knap"></div>
-  </article>
-  
-  
-    <!-- article for interview afsnit 2 -->
-    <article class="interviewindhold2">
-      <div class="interview_grid_2">
-          <div class="interviewimg_2">
-            <img src="/public/img/elle.webp" alt="billede af piger">
-          </div>
-          <div class="interviewtxt_2">
-            <h2>ELLE</h2>
-            <p>I et interview med ELLE kommer vi tæt ind på skaberne bag Some Other Waves. 
-              Carla og Bjørk åbner op om hvordan Some Other Waves startede, og hvordan kunst altid har spillet en essentiel rolle i deres liv siden barnsben. Vi får et indblik i deres drømme, og hvor de ser sig selv i fremtiden.  <br> <br>Lær mere om Carla og Bjørk i interviewet med ELLE her
-              </p>
-              <p class="interview2knap">Knap</p>
-          </div>
+    <div class="interviewtxt">
+      <h2>Magasin</h2>
+      <p>Bæredygtighed i kunst er fundamentet for Some Other Waves' værk, hvilket afspejles i deres samarbejde med Magasin i tråd med kampagnen 'Make the most of it'. Et bæredygtigt initiativ, der giver Some Other Waves mulighed for at give nyt liv til gammelt tøj med deres karakteristiske og farverige motiver. I et særligt interview med Magasin og Some Other Waves udforskes samarbejdet samt essensen af konceptet 'evighedskunst'. <br /> <br /> Læs interview med Magasin og Some Other Waves her.</p>
+      <div class="center-button">
+        <a href="kontakt.astro"><Knap>Læs mere</Knap></a>
       </div>
-      <div class="knap"></div>
-    </article>
-  
-  
-  
-      <!-- article for interview afsnit 3 -->
-      <article class="interviewindhold3">
-        <div class="interview_grid_3">
-            <div class="interviewimg_3">
-              <img src="/public/img/munthe.webp" alt="billede af tegning">
-            </div>
-            <div class="interviewtxt_3">
-              <h2>Munthe</h2>
-              <p>I et interview med tøjmærket Munthe kommer Bjørk og Carla ind på, hvordan barndomsminder med familieture til stranden har formet deres karakteristiske kunstneriske motiver, og hvordan deres kreative opvækst har ledt dem på en naturlig vej ind i kunstverdenen.
-                De deler deres tanker om at være kvinder i kunstbranchen, hvem deres inspirationskilde er og meget mere. <br> <br>Læs interview med Munthe og Some Other Waves her
-                 </p>
-                 <p class="interview3knap">Knap</p>
-            </div>
-        </div>
-        <div class="knap"></div>
-      </article>
+    </div>
+  </div>
+  <div class="knap"></div>
+</article>
 
+<!-- article for interview afsnit 2 -->
+<article class="interviewindhold2">
+  <div class="interview_grid_2">
+    <div class="interviewimg_2">
+      <img src="/public/img/elle.webp" alt="billede af piger" />
+    </div>
+    <div class="interviewtxt_2">
+      <h2>ELLE</h2>
+      <p>I et interview med ELLE kommer vi tæt ind på skaberne bag Some Other Waves.  Carla og Bjørk åbner op om hvordan Some Other Waves startede, og hvordan kunst altid har spillet en essentiel rolle i deres liv siden barnsben. Vi får et indblik i deres drømme, og hvor de ser sig selv i fremtiden.  <br /> <br />Lær mere om Carla og Bjørk i interviewet med ELLE her</p>
+      <div class="center-button">
+        <a href="kontakt.astro"><Knap>Læs mere</Knap></a>
+      </div>
+    </div>
+  </div>
+  <div class="knap"></div>
+</article>
 
+<!-- article for interview afsnit 3 -->
+<article class="interviewindhold3">
+  <div class="interview_grid_3">
+    <div class="interviewimg_3">
+      <img src="/public/img/munthe.webp" alt="billede af tegning" />
+    </div>
+    <div class="interviewtxt_3">
+      <h2>Munthe</h2>
+      <p>I et interview med tøjmærket Munthe kommer Bjørk og Carla ind på, hvordan barndomsminder med familieture til stranden har formet deres karakteristiske kunstneriske motiver, og hvordan deres kreative opvækst har ledt dem på en naturlig vej ind i kunstverdenen. De deler deres tanker om at være kvinder i kunstbranchen, hvem deres inspirationskilde er og meget mere. <br /> <br />Læs interview med Munthe og Some Other Waves her</p>
+      <div class="center-button">
+        <a href="kontakt.astro"><Knap>Læs mere</Knap></a>
+      </div>
+    </div>
+  </div>
+  <div class="knap"></div>
+</article>
 
 <style>
-    /* baggrundsfarve på hele interview afsnit  */
-      article.interviewindhold{
+  /* baggrundsfarve på hele interview afsnit  */
+  article.interviewindhold {
     background-color: var(--beige);
   }
   /* style for interview afsnit 1 */
-  .interviewimg img{
+  .interviewimg img {
     object-fit: cover;
     width: 473px;
     height: 407px;
@@ -77,135 +69,137 @@ import "../../css/generel.css"
     padding-bottom: 9%;
     padding-top: 8%;
     padding-left: 6%;
-}
-.interviewimg{
-  padding-left: 1%;
-}
-.interview1knap{
-  text-align: center;
-  padding-top: 10%;
-}
-.interviewh1{
-  color: var(--skrift);
-  padding-left: 6%;
-  padding-top: 13%;
-}
-.interview_grid h2{
-  color: var(--skrift);
-  padding-left: 6.5%;
-  padding-bottom: 5%;
-}
-.interview_grid p{
-  color: var(--skrift);
-  padding-left: 7%;
-  padding-right: 5%;
-}
-
-@media (min-width:900px){
-  .interview_grid{
-    display: flex;
-    flex-direction: row;
-    margin-left: 60px;
   }
-  .interviewimg img{
-    padding-left: 2%;
-    width: -webkit-fill-available;
-    padding-right: 10%;
-    height: 550px;
-  }
-
   .interviewimg {
-    width: 50%;
-    height: 5%;
-    max-height: 400px;
-  }
-  .interviewtxt{
-    width: 50%;
-    padding-right: 6%;
-    padding-top: 9%;
-  }
-   .interviewh1 {
-    padding-top: 8%;
-    padding-left: 5%;
-    padding-bottom: 2%;
-   }
-
-   .interviewindhold{
-    padding-left: 2%;
-   }
- 
-}
- 
-
-   /* style for interview afsnit 2 */
-   article.interviewindhold2{
-    background-color: var(--beige);
-  }
-   .interviewimg_2 img{
-    object-fit: cover;
-    width: 473px;
-    height: 407px;
-    padding-right: 0%;
-    padding-bottom: 9%;
-    padding-top: 8%;
-    padding-left: 6%;
-}
-.interviewimg_2{
-  padding-left: 1%;
-}
-.interviewtxt_2 h2{
-  color: var(--skrift);
-  padding-left: 6.5%;
-  padding-bottom: 5%;
-}
-.interviewtxt_2 p{
-  color: var(--skrift);
-  padding-left: 7%;
-  padding-right: 5%;
-}
-.interview_grid_2{
-    padding-top: 7%;
-   }
-  .interview2knap{
-  text-align: center;
-  padding-top: 10%;
-}
-
-@media (min-width:900px){
-  .interview_grid_2{
-    display: flex;
-    flex-direction: row;
-    padding-top: 13%;
-    margin-left: 60px;
-  }
-  .interviewimg_2 img{
-    padding-left: 2%;
-    width: -webkit-fill-available;
-    padding-right: 17%;
-    height: 550px;
-
-  }
-
-  .interviewimg_2 {
-    width: 50%;
-    order: 2;
-  }
-  .interviewtxt_2{
-    width: 50%;
-    padding-right: 6%;
-    padding-top: 9%;
-    order: 1;
     padding-left: 1%;
   }
-}
- 
-   
-   /* style for interview afsnit 3 */
-   article.interviewindhold3{
+  .interview1knap {
+    text-align: center;
+    padding-top: 10%;
+  }
+  .interviewh1 {
+    color: var(--skrift);
+    padding-left: 6%;
+    padding-top: 13%;
+  }
+  .interview_grid h2 {
+    color: var(--skrift);
+    padding-left: 6.5%;
+    padding-bottom: 5%;
+  }
+  .interview_grid p {
+    color: var(--skrift);
+    padding-left: 7%;
+    padding-right: 5%;
+  }
+
+  .center-button {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    padding-bottom: 70px;
+  }
+  @media (min-width: 900px) {
+    .interview_grid {
+      display: flex;
+      flex-direction: row;
+      margin-left: 60px;
+    }
+    .interviewimg img {
+      padding-left: 2%;
+      width: -webkit-fill-available;
+      padding-right: 10%;
+      height: 550px;
+    }
+
+    .interviewimg {
+      width: 50%;
+      height: 5%;
+      max-height: 400px;
+    }
+    .interviewtxt {
+      width: 50%;
+      padding-right: 6%;
+      padding-top: 9%;
+    }
+    .interviewh1 {
+      padding-top: 8%;
+      padding-left: 5%;
+      padding-bottom: 2%;
+    }
+
+    .interviewindhold {
+      padding-left: 2%;
+    }
+  }
+
+  /* style for interview afsnit 2 */
+  article.interviewindhold2 {
+    background-color: var(--beige);
+  }
+  .interviewimg_2 img {
+    object-fit: cover;
+    width: 473px;
+    height: 407px;
+    padding-right: 0%;
+    padding-bottom: 9%;
+    padding-top: 8%;
+    padding-left: 6%;
+  }
+  .interviewimg_2 {
+    padding-left: 1%;
+  }
+  .interviewtxt_2 h2 {
+    color: var(--skrift);
+    padding-left: 6.5%;
+    padding-bottom: 5%;
+  }
+  .interviewtxt_2 p {
+    color: var(--skrift);
+    padding-left: 7%;
+    padding-right: 5%;
+  }
+  .interview_grid_2 {
+    padding-top: 7%;
+  }
+  .interview2knap {
+    text-align: center;
+    padding-top: 10%;
+  }
+
+  @media (min-width: 900px) {
+    .interview_grid_2 {
+      display: flex;
+      flex-direction: row;
+      padding-top: 13%;
+      margin-left: 60px;
+    }
+    .interviewimg_2 img {
+      padding-left: 2%;
+      width: -webkit-fill-available;
+      padding-right: 17%;
+      height: 550px;
+    }
+
+    .interviewimg_2 {
+      width: 50%;
+      order: 2;
+    }
+    .interviewtxt_2 {
+      width: 50%;
+      padding-right: 6%;
+      padding-top: 9%;
+      order: 1;
+      padding-left: 1%;
+    }
+  }
+
+  /* style for interview afsnit 3 */
+  article.interviewindhold3 {
     background-color: var(--beige);
     padding-bottom: 12%;
   }
-   .interviewimg_3 img{
+  .interviewimg_3 img {
     object-fit: cover;
     width: 473px;
     height: 407px;
@@ -213,55 +207,52 @@ import "../../css/generel.css"
     padding-bottom: 9%;
     padding-top: 8%;
     padding-left: 6%;
-}
-.interviewimg_3{
-  padding-left: 1%;
-}
-.interviewtxt_3 h2{
-  color: var(--skrift);
-  padding-left: 7%;
-  padding-bottom: 4%;
-
-}
-.interviewtxt_3 p{
-  color: var(--skrift);
-  padding-left: 7%;
-  padding-right: 5%;
-  padding-bottom: 2%;
-}
-.interview_grid_3{
-  padding-top: 12%;
-}
-.interview3knap{
-  text-align: center;
-  padding-top: 10%;
-}
-
-@media (min-width:900px){
-  .interview_grid_3{
-    display: flex;
-    flex-direction: row;
-    padding-top: 4%;
-    margin-left: 60px;
-  }
-  .interviewimg_3 img{
-    padding-left: 7%;
-    width: -webkit-fill-available;
-    padding-right: 10%;
-    height: 550px;
   }
   .interviewimg_3 {
-    width: 50%;
+    padding-left: 1%;
   }
-  .interviewtxt_3{
-    width: 50%;
-    padding-right: 6%;
-    padding-top: 9%;
+  .interviewtxt_3 h2 {
+    color: var(--skrift);
+    padding-left: 7%;
+    padding-bottom: 4%;
   }
-article.interviewindhold3{
-  padding-bottom: 7%;
-}
-   
-}
+  .interviewtxt_3 p {
+    color: var(--skrift);
+    padding-left: 7%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+  }
+  .interview_grid_3 {
+    padding-top: 12%;
+  }
+  .interview3knap {
+    text-align: center;
+    padding-top: 10%;
+  }
 
+  @media (min-width: 900px) {
+    .interview_grid_3 {
+      display: flex;
+      flex-direction: row;
+      padding-top: 4%;
+      margin-left: 60px;
+    }
+    .interviewimg_3 img {
+      padding-left: 7%;
+      width: -webkit-fill-available;
+      padding-right: 10%;
+      height: 550px;
+    }
+    .interviewimg_3 {
+      width: 50%;
+    }
+    .interviewtxt_3 {
+      width: 50%;
+      padding-right: 6%;
+      padding-top: 9%;
+    }
+    article.interviewindhold3 {
+      padding-bottom: 7%;
+    }
+  }
 </style>
