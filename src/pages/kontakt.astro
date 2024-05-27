@@ -16,14 +16,38 @@ import Footer from "../components/Footer.astro";
   
   <section class="hero">
     <div class="herotekst">
-  <h1>Send din forespørgsel her</h1>
+  <h2>Send din forespørgsel her</h2>
   <p>Om du ønsker et smukt maleri i dit hjem, eller på din arbejdsplads, står vi klar til at tage imod din forspørgsel her</p>
+  
+  <form class="formsektion">
+    <label for="fname">Navn</label><br>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="lname">Telefonnummer</label><br>
+    <input type="text" id="lname" name="lname"> <br>
+    <label for="lname">Adresse</label><br>
+    <input type="text" id="lname" name="lname"> <br>
+    <div class="flex">
+      <div>
+    <label for="lname">Postnummer</label><br>
+    <input type="text" id="lname" name="lname"> <br>
+  </div>
+  <div>
+    <label for="lname">By</label><br>
+    <input type="text" id="lname" name="lname"> <br>
+  </div>
+  </div>
+    <label for="lname">Hvor mange m2 vil du have malet?</label><br>
+    <input type="text" id="lname" name="lname"> <br>
+  </form>
+  
   <div class="knap">
   <p>Indsæt billede af overfladen du vil have malet her </p>
   <a href="tak.astro"><Borderknap>Vælg billede</Borderknap></a>
 </div>
   
+<div class="sendknap">
   <a href="tak.astro"><Knap>Send</Knap></a>
+</div>
 </div>
 
 <div class="herobillede">
@@ -65,21 +89,21 @@ import Footer from "../components/Footer.astro";
   <section class="faq_wrapper">
     <h3>Oftest stillede spørgsmål</h3>
   <Linj />
-  <Linjer topic="Hvilken maling maler i med?" text="Vi maler med acryl-vægmaling fra Beck & Jørgensen med EU Ecolabel " statusOpen={true}/>
+  <Linjer topic="Hvilken maling maler i med?" text="Vi maler med acryl-vægmaling fra Beck & Jørgensen med EU Ecolabel." statusOpen={true}/>
 <Linj />
-<Linjer topic="Maler I i hele Danmark?" text="Vi maler med acryl-vægmaling fra Beck & Jørgensen med EU Ecolabel " statusOpen={true}/>
+<Linjer topic="Maler I i hele Danmark?" text="Ja, vi tager offentlig transport rundt i hele landet og transportudgifterne kommer oveni den samlede pris. Vi køber de billigste billetter." statusOpen={true}/>
 <Linj />
-<Linjer topic="Maler i også udendørs?" text="Vi maler med acryl-vægmaling fra Beck & Jørgensen med EU Ecolabel " statusOpen={true}/>
+<Linjer topic="Maler i også udendørs?" text="Nej." statusOpen={true}/>
 <Linj />
-<Linjer topic="Kan man selv vælge baggrundsfarve?" text="Vi maler med acryl-vægmaling fra Beck & Jørgensen med EU Ecolabel " statusOpen={true}/>
+<Linjer topic="Kan man selv vælge baggrundsfarve?" text="Hvis du ønsker en bestemt baggrundsfarve, skal du selv have malet overfladen, inden vi kommer." statusOpen={true}/>
 <Linj />
-<Linjer topic="Hvem sørger for materialer?" text="Vi maler med acryl-vægmaling fra Beck & Jørgensen med EU Ecolabel " statusOpen={true}/>
+<Linjer topic="Hvem sørger for materialer?" text="Vi medbringer selv maling og pensler." statusOpen={true}/>
 <Linj />
-<Linjer topic="Hvad skal jeg have klar inden i kommer?" text="Vi maler med acryl-vægmaling fra Beck & Jørgensen med EU Ecolabel " statusOpen={true}/>
+<Linjer topic="Hvad skal jeg have klar inden i kommer?" text="Du skal have dækket gulvet af omkring det sted vi skal male og sørger for stiger/ evt. stillads." statusOpen={true}/>
 <Linj />
-<Linjer topic="Hvor lang tid ventetid er der?" text="Vi maler med acryl-vægmaling fra Beck & Jørgensen med EU Ecolabel " statusOpen={true}/>
+<Linjer topic="Hvor lang tid ventetid er der?" text="Du skal kontakte os 1-2 måneder før, så vi kan sætte en dato af til dig." statusOpen={true}/>
 <Linj />
-<Linjer topic="Kan man have indflydelse på farver og motiver I maler?" text="Vi maler med acryl-vægmaling fra Beck & Jørgensen med EU Ecolabel " statusOpen={true}/>
+<Linjer topic="Kan man have indflydelse på farver og motiver I maler?" text="Du kan sagtens få indflydelse på farvevalg. Hav gerne nogle screenshots af tidligere værker vi har malet klar når vi kommer. Vi maler kun motiver inde for vores motivverden af menneskekroppe, havelementer og organiske former. Dialog om farver sker på selve male-dagen" statusOpen={true}/>
 <Linj />
 
 </section>
@@ -104,12 +128,41 @@ import Footer from "../components/Footer.astro";
     margin-top: 3rem;
   }
 
-  .herotekst h1{
+  .herotekst h2{
     margin-bottom: 1.5rem;
   }
 
   img{
     height: 35rem;
+  }
+
+  input{
+    border: none;
+    border-bottom: 1px solid #00054E;
+    width: 30rem;
+    margin-bottom: 2rem;
+  }
+
+  label{
+    margin-bottom: 2rem;
+  }
+
+  .flex{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+  }
+
+  .flex input{
+    width: 13rem;
+  }
+
+  .formsektion{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  .formsektion label{
+    opacity: 50%;
   }
 
   .knap{
@@ -165,6 +218,10 @@ import Footer from "../components/Footer.astro";
   img{
     height: 25rem;
   }
+
+.sendknap a{
+  margin-left: 10rem;
+}
 
       .faq_wrapper {
   margin: 3rem;
