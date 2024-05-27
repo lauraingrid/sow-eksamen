@@ -3,30 +3,59 @@ import "../../css/generel.css";
 ---
 
 <article>
-  <h1 id="overskrift">SOME OTHER WAVES</h1>
-  <h2 id="intro">
-    Unik evighedskunst på vægge og lofter der liver dit rum op. <br /> Håndmalet
-    af tvillingesøstrene Carla og Bjørk Nørremark.
-  </h2>
+  <div class="video">
+    <video src="/mp4/forsidevideo_1.mp4" autoplay loop muted></video>
+  </div>
+
+  <div id="specific-spot"></div>
+
+  <a href="#specific-spot" class="pil"> <img src="/svg/pil.svg" alt="pil" /></a>
 </article>
 
 <style>
   /*Mobil*/
 
-  /*Fonte*/
-  #overskrift {
-    font-size: 80px;
-    text-align: center;
-    padding-top: 300px;
+  .video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    
   }
-
-  #intro {
-    font-size: 15px;
-    text-align: center;
-    var(--skrift);
+  .video video{
+    max-width: 100%;
+  }
+  .pil {
+    width: 50px
+    left: 700px;
+    position: absolute;
+    top: 330px;
+    left:50%
   }
 
   /*Desktop*/
   @media (min-width: 900px) {
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      overflow: hidden;
+    }
+
+    .pil {
+    width: 50px
+    left: 700px;
+    position: absolute;
+    top: 700px;
+    left:50%
+  }
   }
 </style>

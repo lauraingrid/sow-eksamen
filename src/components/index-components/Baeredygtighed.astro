@@ -1,13 +1,121 @@
 ---
 import "../../css/generel.css";
+import Knap from "../Knap.astro";
 ---
 
-<article></article>
+<article>
+  <div class="grid">
+    <div class="billeder">
+      <div class="img1">
+        <img
+          src="/img/img_baeredygtighed1.webp"
+          alt="billede af væg"
+          width="400"
+        />
+      </div>
+
+      <div class="img2">
+        <img
+          src="/img/img_baeredygtighed2.webp"
+          alt="billede af trappe"
+          width="330"
+        />
+      </div>
+    </div>
+
+    <div class="tekst">
+      <h2>Bæredygtighed</h2>
+      <p>
+        I Carla og Bjørk Nørremarks kunstvirksomhed inkorporere de bæredygtighed
+
+
+        <br /> ved at male evighedskunst på lofts-og vægmalerier, bruger
+        Ecolabel maling og mere mere.
+      </p>
+      <a href="omos.astro"><Knap>Læs mere om os</Knap></a>
+    </div>
+  </div>
+</article>
 
 <style>
   /*Mobil*/
 
+  h2 {
+    text-align: center;
+    color: var(--skrift);
+    padding-top: 30px;
+    padding-bottom: -30px;
+  }
+
+  p {
+    text-align: center;
+    color: var(--skrift);
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+
+  .img1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+  }
+
+  .img2 {
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+  }
+
+  article {
+    background-color: var(--beige);
+    padding-bottom: 25px;
+  }
+
   /*Desktop*/
   @media (min-width: 900px) {
+    h2 {
+      text-align: left;
+      padding-left: -20px;
+      margin-top: 50px;
+    }
+
+    p {
+      text-align: left;
+      color: var(--skrift);
+      padding-top: 40px;
+    }
+
+    .img1 {
+      justify-content: center;
+      padding-top: 30px;
+    }
+
+    .img2 {
+      padding: 50px;
+      padding-right: 40px;
+      padding-bottom: 20px;
+    }
+
+    .grid {
+      display: flex;
+      flex-direction: row;
+      padding-bottom: 80px;
+      padding-top: 70px;
+    }
+
+    .tekst {
+      width: auto;
+      order: 1;
+      padding: 70px;
+      padding-left: 90px;
+      padding-right: 90px;
+    }
+
+    .billeder {
+      width: auto;
+      order: 2;
+      display: flex;
+      flex-direction: row;
+    }
   }
 </style>
