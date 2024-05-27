@@ -4,8 +4,12 @@ import "../../css/generel.css";
 
 <article>
   <div class="video">
-    <video src="/mp4/forsidevideo_1.mp4" autoplay loop muted> </video>
+    <video src="/mp4/forsidevideo_1.mp4" autoplay loop muted></video>
   </div>
+
+  <div id="specific-spot"></div>
+
+  <a href="#specific-spot" class="pil"> <img src="/svg/pil.svg" alt="pil" /></a>
 </article>
 
 <style>
@@ -16,6 +20,17 @@ import "../../css/generel.css";
     height: 100%;
     object-fit: cover;
     overflow: hidden;
+    
+  }
+  .video video{
+    max-width: 100%;
+  }
+  .pil {
+    width: 50px
+    left: 700px;
+    position: absolute;
+    top: 330px;
+    left:50%
   }
 
   /*Desktop*/
@@ -34,5 +49,13 @@ import "../../css/generel.css";
       object-fit: cover;
       overflow: hidden;
     }
+
+    .pil {
+    width: 50px
+    left: 700px;
+    position: absolute;
+    top: 700px;
+    left:50%
+  }
   }
 </style>

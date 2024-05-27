@@ -16,7 +16,7 @@ import "../../css/generel.css";
         />
       </div>
 
-      <p>1. Kontakt os</p>
+      <p class="overskrift">1. Kontakt os</p>
       <p>
         Du kontakter os og beskriver dit projekt. <br />Fortæl gerne om
         lokation, ønsker til størrelse og lignende.
@@ -33,7 +33,7 @@ import "../../css/generel.css";
         />
       </div>
 
-      <p>2. Dialog om opgaven</p>
+      <p class="overskrift">2. Dialog om opgaven</p>
       <p>
         Vi følger op med nogle spørgsmål, <br /> som giver os et bedre indblik i
         opgavens omfang.
@@ -50,7 +50,7 @@ import "../../css/generel.css";
         />
       </div>
 
-      <p>3. Opstart og planlægning</p>
+      <p class="overskrift">3. Opstart og planlægning</p>
       <p>
         Vi mødes på lokationen, hvor vi <br /> lægger en konkret plan og tester
         farvenuancer.
@@ -67,7 +67,7 @@ import "../../css/generel.css";
         />
       </div>
 
-      <p>4. Den store dag</p>
+      <p class="overskrift">4. Den store dag</p>
       <p>
         Vi ankommer til lokationen på aftalt dato <br /> og bruger én helt dag
         på at male dit nye evighedsmaleri.
@@ -90,10 +90,15 @@ import "../../css/generel.css";
     align-items: center;
   }
 
+  /* størrelse */
   .musling img {
-    /* størrelse */
+    height: 100px;
   }
 
+  .overskrift {
+    font-family: "yeldevi";
+    font-weight: bolder;
+  }
   .boks {
     text-align: center;
     padding: 30px;
@@ -103,13 +108,6 @@ import "../../css/generel.css";
     color: var(--blaa);
   }
 
-  /* 
-  
-
-  
-  }
-/*
-*/
   .billede img {
     display: flex;
     justify-content: center;
@@ -128,7 +126,8 @@ import "../../css/generel.css";
 
   article {
     background-color: #f9f5f1;
-    padding-bottom: 100px;
+    padding-bottom: 150px;
+    padding-top: 50px;
   }
 
   /*Desktop*/
