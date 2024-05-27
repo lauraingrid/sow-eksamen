@@ -5,7 +5,7 @@ const { topic, text, statusOpen, statusClosed } = Astro.props;
 
 <div class="faq-row">
     <div class="text_col">
-        <h4>{topic}</h4>
+        <h5>{topic}</h5>
         {statusOpen && <img src="../public/svg/luk_ikon.svg" alt="kryds ikon" class="faq_icon" id="closed_icon">}
         {statusClosed && <img src="../public/svg/aaben_ikon.svg" alt="plus ikon" class="faq_icon" id="opened_icon">}
     </div>
@@ -45,8 +45,8 @@ const { topic, text, statusOpen, statusClosed } = Astro.props;
     @media (min-width: 768px) {
 
         .faq_icon {
-        height: 25px;
-        width: 25px;
+        height: 20px;
+        width: 20px;
     }
 
 }
