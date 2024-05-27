@@ -1,0 +1,102 @@
+---
+import "../../css/generel.css"
+---
+<!-- i ovenstående hegn skal du importere css og evt andre komponenter fx knapper -->
+<!-- for at se komponentet så hent det ind på siden og åben over npm localhoast/sidens navn -->
+
+
+<article class="afsnit2">
+    <div class="grid">
+    <div class="kundecitat">
+      <div class="txt2">
+        <p>
+          <br><div class="citationstegn">"</div>
+          Det har virkelig tilføjet en unik og kreativ dimension til vores butik. <br> Det var vigtigt for os at samarbejde med nogen, der kunne skabe noget både <br> æstetisk og meningsfuldt. <br> <br> <div class="citationstegn2">" </div></p> 
+     <p class="txt2_1">Østerbro Optik</p>
+      </div>
+        <img src="/public/svg/muslinger1.svg" alt="muslinger">
+  </div>
+  </div>
+  </article>
+
+  <style>
+    article.afsnit2{
+  background-color: var(--beige);
+  margin-top: 60px;
+  padding-top: 10%;
+  padding-bottom: 14%;
+}
+.kundecitat p{
+  text-align: center;
+  color: var(--skrift);
+  padding-bottom: 4%;
+}
+.kundecitat img{
+  margin-left: 90px;
+  padding-top: 15%;
+  width: 50%;
+  height: 50%;
+}
+.citationstegn{
+  font-size: 35px;
+  color: var(--skrift);
+}
+.citationstegn2{
+  font-size: 35px;
+  color: var(--skrift);
+}
+.txt2{
+  text-align: center;
+  color: var(--skrift);
+  font-size: 18px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+@media(min-width:900px){
+
+  .kundecitat{
+    display: flex;
+    flex-direction: row;
+    gap: 4%;
+    justify-content: center;
+    color: var(--skrift);
+    font-size: 20px;
+    margin-top: -40px;
+  }
+  .txt2{
+    order: 2;
+    width: 50%;
+    text-align: center;
+    padding-left: 5%;
+  }
+  
+  .kundecitat img{
+    order: 1;
+    width: 24%;
+    margin-top: -230px;
+  }
+  article.afsnit2{
+    padding-bottom: 7%;
+    padding-top: 10%;
+  }
+  .txt2_1{
+    padding-top: 20px;
+  }
+.kundecitat p{
+  font-size: 20px;
+  padding-bottom: 2%;
+}
+.citationstegn{
+  font-size: 30px;
+  color: var(--skrift);
+}
+.citationstegn2{
+  font-size: 30px;
+  color: var(--skrift);
+}
+
+
+
+}
+  </style>
