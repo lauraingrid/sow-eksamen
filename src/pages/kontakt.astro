@@ -1,22 +1,26 @@
 ---
 import MainLayout from "../layout/MainLayout.astro";
+import Header from "../components/Header.astro";
 import Linjer from "../components/kontaktcomponent/Linjer.astro";
 import Linj from "../components/kontaktcomponent/Linj.astro";
+import Footer from "../components/Footer.astro";
 
 ---
 
 <MainLayout>
+  <Header />
   <section class="faq_wrapper">
     <h2>Oftest stillede spørgsmål</h2>
   <Linj />
   <Linjer topic="Hvilken maling maler i med?" text="Vi maler med acryl-vægmaling fra Beck & Jørgensen med EU Ecolabel " statusOpen={true}/>
 <Linj />
 </section>
+<Footer />
 </MainLayout>
 
 <style>
 .faq_wrapper {
-  margin: 10rem;
+  margin: 12rem;
     }
 
     h2{

@@ -7,7 +7,7 @@ const { topic, text, statusOpen, statusClosed } = Astro.props;
     <div class="text_col">
         <h4>{topic}</h4>
         {statusOpen && <img src="../public/svg/luk_ikon.svg" alt="kryds ikon" class="faq_icon" id="closed_icon">}
-        {statusClosed && <img src="../public/icons/aaben_ikon.svg" alt="plus ikon" class="faq_icon" id="opened_icon">}
+        {statusClosed && <img src="../public/svg/aaben_ikon.svg" alt="plus ikon" class="faq_icon" id="opened_icon">}
     </div>
     <p class="faq_text" id="faq_p_hidden">{text}</p>
 
@@ -23,8 +23,8 @@ const { topic, text, statusOpen, statusClosed } = Astro.props;
     }
 
     .faq_icon {
-        height: 32px;
-        width: 32px;
+        height: 20px;
+        width: 20px;
     }
 
     .faq_text {
@@ -45,8 +45,8 @@ const { topic, text, statusOpen, statusClosed } = Astro.props;
     @media (min-width: 768px) {
 
         .faq_icon {
-        height: 32px;
-        width: 32px;
+        height: 25px;
+        width: 25px;
     }
 
 }
