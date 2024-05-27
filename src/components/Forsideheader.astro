@@ -1,0 +1,173 @@
+---
+import "./../css/generel.css";
+---
+
+<article>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="/"><img src="/public/svg/logo_blaa.svg" width="141" height="200" alt="logo" /></a>
+    </div>
+    <ul class="nav-menu">
+      <li class="nav-item"><a href="galleri" class="nav-link">Værker & samarbejder</a></li>
+      <li class="nav-item"><a href="omos" class="nav-link">Om os</a></li>
+      <li class="nav-item"><a href="kontakt" class="nav-link">Kontakt</a></li>
+    </ul>
+
+    <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </nav>
+</article>
+
+<style>
+  article {
+    background-color: #f3ece600;
+  }
+
+  .navbar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 54px;
+  }
+
+  .nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    list-style-type: none;
+  }
+
+  .nav-link {
+    transition: 0s ease;
+    text-decoration: none;
+  }
+
+  .hamburger {
+    display: none;
+    cursor: pointer;
+  }
+
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--skrift);
+  }
+
+  a {
+    font-family: "eb";
+    color: var(--skrift);
+    font-size: 18px;
+  }
+
+  /* logo style */
+  .logo img {
+    max-height: 90px;
+    max-width: 90px;
+    padding-top: 1rem;
+  }
+
+  @media (min-width: 900px) {
+    .logo img {
+      max-height: 100px;
+      max-width: 100px;
+      padding-top: 1rem;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .hamburger {
+      display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+      position: fixed;
+      left: -100%;
+      top: 70px;
+      gap: 10px;
+      height: 400px;
+      flex-direction: column;
+      background-color: #f3ece6;
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .nav-item {
+      margin: 40px 20px;
+    }
+
+    .nav-menu.active {
+      left: 0;
+    }
+
+    .nav-menu .nav-item a {
+      font-family: "yeldevi";
+      text-decoration: none;
+      color: var(--skrift);
+      font-size: 2rem;
+    }
+
+    header .navbar .logo {
+      max-height: 100px;
+      max-width: 100%;
+    }
+  }
+
+  header .navbar .logo {
+    max-height: auto;
+    max-width: 160px;
+  }
+
+  header .navbar a {
+    text-decoration: none;
+  }
+
+  .nav_menu a {
+    border: 1px solid rgba(250, 245, 195, 0);
+  }
+
+  a:hover {
+    border-bottom: 2px solid var(--skrift);
+  }
+
+  .active_border {
+    border-bottom: 1px solid var(--skrift);
+  }
+
+  @media (min-width: 900px) {
+    .nav-link:active {
+      border-bottom: 2px solid var(--skrift);
+    }
+  }
+</style>
+
+<script>
+  const hamburger = document.querySelector(".hamburger");
+  const navmenu = document.querySelector(".nav-menu");
+
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navmenu.classList.toggle("active");
+  });
+</script>
