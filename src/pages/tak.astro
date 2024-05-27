@@ -1,11 +1,58 @@
 ---
 import MainLayout from "../layout/MainLayout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <MainLayout>
-  <!-- i skal kode alt indhold her -->
+  <Header />
+  <section class="tak">
+  <div class="taktekst">
+<h4 class="opacity70">Tusind tak!</h4>
+<h2>Vi er så glade for at du har rakt ud til os!</h1>
+<h3 class="opacity70">Vi kontakter dig hurtigst muligt med uddybende information og tilbud</h3>
+<h4 class="opacity50">Indtil da, kan du jo følge med på vores Instagram herunder!</h4>
+    <img src="/public/svg/someblaa.svg" alt="hej">
+  </div>
+</section>
+<Footer />
 </MainLayout>
 
 <style>
-hej
+.tak {
+  background-image: url("/public/svg/baggrundtak.svg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 100dvh;
+  display: grid;
+  color: var(--skrift);
+}
+
+.taktekst {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 4rem;
+  text-align: center;
+  place-self: center;
+  line-height: 6rem;
+  max-width: 70rem;
+}
+
+img {
+  width: 40px;
+  cursor: pointer;
+}
+
+.opacity50{
+  opacity: 50%;
+}
+.opacity70{
+  opacity: 70%;
+}
 </style>
+
