@@ -1,0 +1,54 @@
+---
+import "../../css/generel.css"
+---
+
+
+<!-- i ovenstående hegn skal du importere css og evt andre komponenter fx knapper -->
+<!-- for at se komponentet så hent det ind på siden og åben over npm localhoast/sidens navn -->
+
+<article>
+<div class="topimg">
+     <img src="/public/img/topmaleri.webp" alt="billede af maleri">
+ </div>
+ <div class="toph1">
+   <h1>Værker og samarbejde </h1>
+ </div>
+</article>
+
+
+<style>
+ .topimg img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  z-index: -1;
+  object-fit: cover;
+}
+.toph1{
+  position: absolute;
+  top: 35%;
+  left: 21%;
+  z-index: 1;
+  object-fit: cover;
+  color: var(--hvid);
+}
+@media(min-width:900px){
+  .topimg img{
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  z-index: -1;
+  object-fit: cover;
+  }
+  .toph1{
+  position: absolute;
+  top: 35%;
+  left: 35%;
+  z-index: 1;
+  object-fit: cover;
+  color: var(--hvid);
+  }
+}
+</style>
