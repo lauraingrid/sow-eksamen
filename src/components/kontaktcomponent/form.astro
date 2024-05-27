@@ -12,23 +12,23 @@ import Knap from "../Knap.astro";
   
   <form class="formsektion">
     <label for="fname">Navn</label><br>
-    <input type="text" id="fname" name="fname"><br>
-    <label for="lname">Telefonnummer</label><br>
-    <input type="text" id="lname" name="lname"> <br>
-    <label for="lname">Adresse</label><br>
-    <input type="text" id="lname" name="lname"> <br>
+    <input type="text" id="name" name="name"><br>
+    <label for="tel">Telefonnummer</label><br>
+    <input type="tel" id="tel" name="tel"> <br>
+    <label for="address">Adresse</label><br>
+    <input type="text" id="address" name="address"> <br>
     <div class="flex">
       <div>
-    <label for="lname">Postnummer</label><br>
-    <input type="text" id="lname" name="lname"> <br>
+    <label for="number">Postnummer</label><br>
+    <input type="text" id="number" name="number"> <br>
   </div>
   <div>
-    <label for="lname">By</label><br>
-    <input type="text" id="lname" name="lname"> <br>
+    <label for="city">By</label><br>
+    <input type="text" id="city" name="city"> <br>
   </div>
   </div>
-    <label for="lname">Hvor mange m2 vil du have malet?</label><br>
-    <input type="text" id="lname" name="lname"> <br>
+    <label for="number">Hvor mange m2 vil du have malet?</label><br>
+    <input type="text" id="number" name="number"> <br>
   </form>
   
   <div class="knap">
@@ -104,6 +104,7 @@ import Knap from "../Knap.astro";
     flex-direction: row;
     gap: 2rem;
   }
+
   @media (max-width: 900px) {
 
     .sendknap{
