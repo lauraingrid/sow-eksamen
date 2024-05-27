@@ -5,6 +5,8 @@ import Header from "../components/Header.astro";
 import Process from "../components/index-components/Process.astro";
 import Linjer from "../components/kontaktcomponent/Linjer.astro";
 import Linj from "../components/kontaktcomponent/Linj.astro";
+import Knap from "../components/Knap.astro";
+import Borderknap from "../components/Borderknap.astro";
 import Footer from "../components/Footer.astro";
 
 ---
@@ -12,9 +14,51 @@ import Footer from "../components/Footer.astro";
 <MainLayout>
   <Header />
   
+  <section class="hero">
+    <div class="herotekst">
   <h1>Send din forespørgsel her</h1>
   <p>Om du ønsker et smukt maleri i dit hjem, eller på din arbejdsplads, står vi klar til at tage imod din forspørgsel her</p>
-  <img src="../public/svg/kontaktillustration.svg" alt="Illustration">
+  <div class="knap">
+  <p>Indsæt billede af overfladen du vil have malet her </p>
+  <a href="tak.astro"><Borderknap>Vælg billede</Borderknap></a>
+</div>
+  
+  <a href="tak.astro"><Knap>Send</Knap></a>
+</div>
+
+<div class="herobillede">
+  <img src="/public/svg/kontaktillu.webp" alt="">
+</div>
+</section>
+
+<section class="info">
+  <div class="someinfo">
+  <h3>Følg vores sociale medier</h2>
+    <div class="some">
+      <div class="instagram">
+        <p class="opacity70">Instagram</p>
+        <p>@someotherwaves</p>
+      </div>
+      <div class="facebook">
+        <p class="opacity70">Facebook</p>
+        <p>/someotherwaves</p>
+      </div>
+    </div>
+  </div>
+  <div class="kontaktinfo">
+    <h3>Kontaktinformation</h3>
+      <div class="kontakt">
+        <div class="email">
+          <p class="opacity70">Email</p>
+          <p>@carlanoerremark@gmail.com</p>
+        </div>
+        <div class="telefon">
+          <p class="opacity70">Telefon</p>
+          <p>+45 25 34 46 96</p>
+        </div>
+      </div>
+    </div>
+</section>
 
   <Process />
 
@@ -45,6 +89,58 @@ import Footer from "../components/Footer.astro";
 </MainLayout>
 
 <style>
+
+  .hero{
+    margin-left: 7rem;
+    margin-right: 7rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: row;
+    gap: 15rem;
+  }
+
+  .herotekst{
+    margin-top: 3rem;
+  }
+
+  .herotekst h1{
+    margin-bottom: 1.5rem;
+  }
+
+  img{
+    height: 35rem;
+  }
+
+  .knap{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+
+  .info, .some, .kontakt{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3rem;
+  }
+
+  .info{
+    gap: 12rem;
+    margin-left: 7rem;
+  }
+
+  .info h3{
+    margin-bottom: 3rem;
+  }
+
+  .some, .kontakt{
+    gap: 7rem;
+  }
+
+  .opacity70{
+    opacity: 70%;
+  }
 .faq_wrapper {
   margin: 12rem;
     }
