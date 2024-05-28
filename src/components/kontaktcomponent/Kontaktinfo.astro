@@ -1,0 +1,86 @@
+---
+import "../../css/generel.css";
+---
+
+
+  
+<section class="info">
+    <div class="someinfo">
+    <h3>Følg vores sociale medier</h2>
+      <div class="some">
+        <div class="instagram">
+          <p class="opacity70">Instagram</p>
+          <p>@someotherwaves</p>
+        </div>
+        <div class="facebook">
+          <p class="opacity70">Facebook</p>
+          <p>/someotherwaves</p>
+        </div>
+      </div>
+    </div>
+    <div class="kontaktinfo">
+      <h3>Kontaktinformation</h3>
+        <div class="kontakt">
+          <div class="email">
+            <p class="opacity70">Email</p>
+            <p>@carlanoerremark@gmail.com</p>
+          </div>
+          <div class="telefon">
+            <p class="opacity70">Telefon</p>
+            <p>+45 25 34 46 96</p>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <style>
+
+
+  .info, .some, .kontakt{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3rem;
+  }
+
+  .info{
+    gap: 12rem;
+    margin-left: 7rem;
+    margin-top: 10rem;
+  }
+
+  .info h3{
+    margin-bottom: 3rem;
+  }
+
+  .some, .kontakt{
+    gap: 7rem;
+  }
+
+  .opacity70{
+    opacity: 50%;
+  }
+
+  @media (max-width: 900px) {
+
+
+.info{
+display: flex;
+flex-direction: column;
+margin-bottom: 3rem;
+}
+
+.info{
+gap: 3rem;
+margin-left: 3rem;
+margin-top: 7rem;
+}
+
+.info h3{
+margin-bottom:2rem;
+}
+
+.some, .kontakt{
+gap: 4rem;
+}
+}
+  </style>

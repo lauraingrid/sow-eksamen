@@ -1,0 +1,129 @@
+---
+import "../../css/generel.css";
+import Borderknap from "../Borderknap.astro";
+import Knap from "../Knap.astro";
+---
+
+
+<section class="hero">
+    <div class="herotekst">
+  <h2>Send din forespørgsel her</h2>
+  <p>Om du ønsker et smukt maleri i dit hjem, eller på din arbejdsplads, står vi klar til at tage imod din forspørgsel her</p>
+  
+  <form class="formsektion">
+    <label for="fname">Navn</label><br>
+    <input type="text" id="name" name="name"><br>
+    <label for="tel">Telefonnummer</label><br>
+    <input type="tel" id="tel" name="tel"> <br>
+    <label for="address">Adresse</label><br>
+    <input type="text" id="address" name="address"> <br>
+    <div class="flex">
+      <div>
+    <label for="number">Postnummer</label><br>
+    <input type="text" id="number" name="number"> <br>
+  </div>
+  <div>
+    <label for="city">By</label><br>
+    <input type="text" id="city" name="city"> <br>
+  </div>
+  </div>
+    <label for="number">Hvor mange m2 vil du have malet?</label><br>
+    <input type="text" id="number" name="number"> <br>
+  </form>
+  
+  <div class="knap">
+  <p>Indsæt billede af overfladen du vil have malet her </p>
+  <a href="tak.astro"><Borderknap>Vælg billede</Borderknap></a>
+</div>
+  
+<div class="sendknap">
+  <a href="tak.astro"><Knap>Send</Knap></a>
+</div>
+</div>
+
+<div class="herobillede">
+  <img src="/public/svg/kontaktillu.webp" alt="">
+</div>
+</section>
+
+<style>
+
+.hero{
+    margin-left: 7rem;
+    margin-right: 7rem;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: row;
+    gap: 15rem;
+  }
+
+  .herotekst{
+    margin-top: 3rem;
+  }
+
+  .herotekst h2{
+    margin-bottom: 1.5rem;
+  }
+
+  img{
+    height: 40rem;
+  }
+
+  input{
+    border: none;
+    border-bottom: 1px solid #00054E;
+    width: 30rem;
+    margin-bottom: 2rem;
+  }
+
+  label{
+    margin-bottom: 2rem;
+  }
+
+  .flex{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+  }
+
+  .flex input{
+    width: 13rem;
+  }
+
+  .formsektion{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  .formsektion label{
+    opacity: 50%;
+  }
+
+  .knap{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  @media (max-width: 900px) {
+
+    .sendknap{
+margin-top: 2rem;
+      margin-left: 10rem;
+    }
+    .hero{
+margin-left: 3rem;
+margin-right: 3rem;
+margin-top: 1rem;
+margin-bottom: 3rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 5rem;
+}
+
+img{
+height: 25rem;
+}
+  }
+</style>
