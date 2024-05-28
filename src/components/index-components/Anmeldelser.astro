@@ -1,5 +1,6 @@
 ---
 import "../../css/generel.css";
+import Knap from "../Knap.astro";
 ---
 
 <article>
@@ -8,15 +9,14 @@ import "../../css/generel.css";
     <div class="boks_scroll">
       <div class="boks1">
         <p>
-          “Jeg kan slet ikke forstå, hvordan jeg har kunne leve uden det her <br
-          />
-           loftsmaleri af Some Other Waves. De har malet i frihånd <br /> og
-          brugte under én dag.”
+          “Jeg kan slet ikke forstå, hvordan jeg har kunne leve uden det her
+          loftsmaleri af Some Other Waves. De har malet i frihånd og brugte
+          under én dag.”
         </p>
         <p class="navn">Sofie Linde</p>
       </div>
       <div class="boks2">
-        <p>
+        <p class="citat">
           “Det har virkelig tilføjet en unik og kreativ dimension til vores
           butik ... Det var vigtigt for os at samarbejde med nogen, der kunne
           skabe noget både æstetisk og meningsfuldt.”
@@ -53,6 +53,69 @@ import "../../css/generel.css";
   </section>
 </article>
 <style>
+  /*Mobil*/
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+
+  .boks_scroll {
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  }
+  .navn {
+    padding-top: 70px;
+    padding-bottom: 20px;
+    font-weight: bold;
+  }
+
+  .boks3 .navn {
+    padding-top: 5px;
+  }
+
+  .pile {
+    display: flex;
+    justify-content: center;
+    padding-left: 30px;
+    padding-bottom: 40px;
+  }
+  p {
+    color: var(--blaa);
+    padding-top: 20px;
+    width: 300px;
+    height: 100px;
+  }
+
+  h2 {
+    text-align: center;
+    color: var(--blaa);
+    padding-top: 50px;
+    padding-bottom: -50px;
+  }
+
+  .boks1,
+  .boks2,
+  .boks3,
+  .boks4,
+  .boks5 {
+    text-align: center;
+    background-color: var(--lysblaa);
+    border: 1px solid var(--lysblaa);
+    border-radius: 20px;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 80px;
+  }
+
+  .citat {
+    line-height: 25px;
+  }
   @media (min-width: 900px) {
     .center {
       display: flex;
@@ -78,7 +141,7 @@ import "../../css/generel.css";
     p {
       color: var(--blaa);
       padding-top: 20px;
-      width: 200px;
+      width: 350px;
       height: 100px;
       font-style: italic;
     }
@@ -90,39 +153,19 @@ import "../../css/generel.css";
       padding-bottom: -50px;
     }
 
-    .boks1 {
-      text-align: center;
-      background-color: #e0e9ff;
-      border: 1px solid lightblue;
+    .boks1,
+    .boks2,
+    .boks3,
+    .boks4,
+    .boks5 {
       border-radius: 20px;
       padding: 10px;
-      padding-left: 100px;
-      padding-right: 100px;
+      padding-left: 50px;
+      padding-right: 50px;
       margin: 80px;
       margin-right: 20px;
       margin-top: 70px;
-    }
-
-    .boks2 {
-      text-align: center;
-      background-color: lightblue;
-      border: 1px solid lightblue;
-      border-radius: 20px;
-      padding: 10px;
-      padding-left: 100px;
-      padding-right: 100px;
-      margin: 80px;
-    }
-
-    .boks3 {
-      text-align: center;
-      background-color: lightblue;
-      border: 1px solid lightblue;
-      border-radius: 20px;
-      padding: 10px;
-      padding-left: 100px;
-      padding-right: 100px;
-      margin: 80px;
+      line-height: normal;
     }
 
     .boks3 .navn {
@@ -133,118 +176,12 @@ import "../../css/generel.css";
       padding-bottom: 0;
     }
 
-    .bok .boks4 {
-      text-align: center;
-      background-color: lightblue;
-      border: 1px solid lightblue;
-      border-radius: 20px;
-      padding: 10px;
-      padding-left: 100px;
-      padding-right: 100px;
-      margin: 80px;
-    }
-
     .pile {
       display: flex;
       justify-content: center;
       padding-left: 30px;
       padding-bottom: 40px;
     }
-  }
-
-  /*Mobil*/
-  .center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 3.2rem;
-  }
-
-  .boks_scroll {
-    display: flex;
-    align-items: center;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-  }
-  .navn {
-    padding-top: 70px;
-    padding-bottom: 20px;
-    font-weight: bold;
-  }
-
-  .pile {
-    display: flex;
-    justify-content: center;
-    padding-left: 30px;
-    padding-bottom: 40px;
-  }
-  p {
-    color: var(--blaa);
-    padding-top: 20px;
-    width: 200px;
-    height: 100px;
-  }
-
-  h2 {
-    text-align: center;
-    color: var(--blaa);
-    padding-top: 50px;
-    padding-bottom: -50px;
-  }
-
-  .boks1 {
-    text-align: center;
-    background-color: lightblue;
-    border: 1px solid lightblue;
-    border-radius: 20px;
-    padding: 10px;
-    padding-left: 100px;
-    padding-right: 100px;
-    margin: 80px;
-  }
-
-  .boks2 {
-    text-align: center;
-    background-color: lightblue;
-    border: 1px solid lightblue;
-    border-radius: 20px;
-    padding: 10px;
-    padding-left: 100px;
-    padding-right: 100px;
-    margin: 80px;
-  }
-
-  .boks3 {
-    text-align: center;
-    background-color: lightblue;
-    border: 1px solid lightblue;
-    border-radius: 20px;
-    padding: 10px;
-    padding-left: 100px;
-    padding-right: 100px;
-    margin: 80px;
-  }
-  .boks4 {
-    text-align: center;
-    background-color: lightblue;
-    border: 1px solid lightblue;
-    border-radius: 20px;
-    padding: 10px;
-    padding-left: 100px;
-    padding-right: 100px;
-    margin: 80px;
-  }
-
-  .boks5 {
-    text-align: center;
-    background-color: lightblue;
-    border: 1px solid lightblue;
-    border-radius: 20px;
-    padding: 10px;
-    padding-left: 100px;
-    padding-right: 100px;
-    margin: 80px;
   }
 </style>
 
