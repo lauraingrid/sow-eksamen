@@ -31,7 +31,7 @@ const { myData } = Astro.props;
 
 <article>
   <Header />
-  <a href="../galleri">
+  <a class="pil" href="../galleri">
     <img src="/svg/venstre_pil.svg" alt="Tryk tilbage på pil" />
   </a>
   <!-- Kundeinfo -->
@@ -110,6 +110,10 @@ const { myData } = Astro.props;
 
   #lokation {
     padding-top: 30px;
+  }
+
+  .pil img {
+    padding: 30px;
   }
   @media (min-width: 900px) {
     .grid1 {
