@@ -57,6 +57,16 @@ h3 {
   font-family: "yeldevi";
 }
 
+h4 {
+  font-size: 16px;
+  font-family: "yeldevi";
+}
+
+h5 {
+  font-size: 16px;
+  font-family: "yeldevi";
+}
+
 p {
   font-size: 16px;
   font-family: "eb";
@@ -77,6 +87,16 @@ p {
 
   h3 {
     font-size: 32px;
+    font-family: "yeldevi";
+  }
+
+  h4 {
+    font-size: 24px;
+    font-family: "yeldevi";
+  }
+
+  h5 {
+    font-size: 20px;
     font-family: "yeldevi";
   }
 
