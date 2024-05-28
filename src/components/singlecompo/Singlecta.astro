@@ -1,48 +1,68 @@
 ---
-import "../../css/generel.css"
+import "../../css/generel.css";
+import Knap from "../Knap.astro";
 ---
 
-<!-- i ovenstående hegn skal du importere css og evt andre komponenter fx knapper -->
-<!-- for at se komponentet så hent det ind på siden og åben over npm localhoast/sidens navn -->
-
+<!-- i ovenstående hegn skal du importere css og evt andre komponenter fx knapper --><!-- for at se komponentet så hent det ind på siden og åben over npm localhoast/sidens navn -->
 <article>
-    <div class="grid3">
-      <h3 class="cta3"> Mangler dit hjem eller din arbejdsplads et kunstnerisk udtryk?  </h3>
-      <!-- CTA knap -->
-        <img class="mint_musling" src="/public/svg/mint_illustration.svg" alt="billede af musling">
+  <div class="grid">
+    <div class="tekst">
+      <h3>Mangler dit hjem eller din arbejdsplads et kunstnerisk udtryk?</h3>
+      <div class="center-button">
+        <a href="/kontakt"><Knap>Kontakt os</Knap></a>
+      </div>
     </div>
-  </article>
+    <div class="billede"><img class="mint_musling" src="/public/svg/mint_illustration.svg" alt="billede af musling" /></div>
+  </div>
+</article>
 
+<style>
+  h3 {
+    color: var(--skrift);
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
 
-  <style>
-.cta3{
-  color: var(--skrift);
-  text-align: center;
-  padding-top: 10%;
-  padding-bottom: 13%;
-}
-img.mint_musling{
-  width: 280px;
-  margin-left: 145px;
-  padding-top: 4%;
-  padding-bottom: 6%;
-}
-
-@media(min-width:900px){
-  .grid3{
+  .billede img {
     display: flex;
-    flex-direction: row;
-    padding-top: 5%;
-    padding-left: 4%;
-    padding-right: 4%;
-    padding-bottom: 5%;
     justify-content: center;
+    align-items: center;
+    width: 60%;
   }
-  .cta3{
-    width: 50%;
+
+  img.mint_musling {
+    width: 280px;
+    margin-left: 145px;
+    padding-top: 4%;
+    padding-bottom: 6%;
   }
-  .grid3 img{
-    width: 35%;
+
+  .center-button {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    padding-bottom: 70px;
   }
-}
+  @media (min-width: 900px) {
+    .grid {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .billede {
+      width: 50%;
+      align-items: center;
+      padding-top: 40px;
+    }
+
+    .tekst {
+      width: 50%;
+    }
+
+    .tekst h3 {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
 </style>
