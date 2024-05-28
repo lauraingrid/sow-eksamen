@@ -25,7 +25,7 @@ const { myData } = Astro.props;
   <div class="grid1">
     <img src="/img/kundeimg.webp" alt="billede af kunstværk" />
     <div class="grid1txt">
-      <h1>{myData.navn}</h1>
+      <h2>{myData.navn}</h2>
       <br />
       <p>{myData.info}</p>
       <p>{myData.hvor}</p>
@@ -65,7 +65,7 @@ const { myData } = Astro.props;
     }
 
     .grid1 h1 {
-      padding-top: 25%;
+      padding-top: 10%;
       padding-left: 10%;
     }
     .grid1 p {
@@ -79,7 +79,7 @@ const { myData } = Astro.props;
     }
 
     .grid1txt {
-      margin-top: 40px;
+      margin-top: 20px;
       padding-right: 5%;
     }
   }
