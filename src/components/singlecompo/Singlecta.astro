@@ -7,7 +7,7 @@ import Knap from "../Knap.astro";
 <article>
   <div class="grid">
     <div class="tekst">
-      <h3>Mangler dit hjem eller din arbejdsplads et kunstnerisk udtryk?</h3>
+      <h4>Mangler dit hjem eller din arbejdsplads et kunstnerisk udtryk?</h4>
       <div class="center-button">
         <a href="/kontakt"><Knap>Kontakt os</Knap></a>
       </div>
@@ -17,11 +17,11 @@ import Knap from "../Knap.astro";
 </article>
 
 <style>
-  h3 {
+  h4 {
     color: var(--skrift);
     text-align: center;
     padding-top: 100px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
   }
 
   .billede img {
@@ -44,6 +44,7 @@ import Knap from "../Knap.astro";
     padding: 30px;
     padding-bottom: 70px;
   }
+
   @media (min-width: 900px) {
     .grid {
       display: flex;
@@ -58,9 +59,11 @@ import Knap from "../Knap.astro";
 
     .tekst {
       width: 50%;
+      margin-left: 5rem;
+      margin-top: 2rem;
     }
 
-    .tekst h3 {
+    .tekst h4 {
       padding-left: 20px;
       padding-right: 20px;
     }
