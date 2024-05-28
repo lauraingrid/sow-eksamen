@@ -42,7 +42,7 @@ const { myData } = Astro.props;
         <h1>{myData.navn}</h1>
         <br />
         <p>{myData.info}</p>
-        <p>{myData.hvor}</p>
+        <p id="lokation">{myData.hvor}</p>
       </div>
     </div>
   </article>
@@ -51,15 +51,15 @@ const { myData } = Astro.props;
   <article class="afsnit2">
     <div class="grid">
       <div class="kundecitat">
-        <div class="txt2">
+        <div class="citat">
           <p>
-            <br /><div class="citationstegn">"</div>
+            <div class="citationstegn">"</div>
             {myData.citat}
             <br />
             <br />
             <div class="citationstegn2">"</div>
           </p>
-          <p class="txt2_1">- {myData.citataf}</p>
+          <p class="citat_af">- {myData.citataf}</p>
         </div>
         <img src="/public/svg/muslinger1.svg" alt="muslinger" />
       </div>
@@ -96,6 +96,21 @@ const { myData } = Astro.props;
     padding-bottom: 5%;
   }
 
+  .grid1txt p {
+    display: flex;
+    justify-content: center;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .grid1txt h1 {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  #lokation {
+    padding-top: 30px;
+  }
   @media (min-width: 900px) {
     .grid1 {
       display: flex;
@@ -153,17 +168,19 @@ const { myData } = Astro.props;
     font-size: 35px;
     color: var(--skrift);
   }
-  .txt2 {
+  .citat {
     text-align: center;
     color: var(--skrift);
     font-size: 18px;
     padding-left: 10%;
     padding-right: 10%;
     font-style: italic;
+    line-height: 30px;
   }
 
-  .txt2_1 {
+  .citat_af {
     font-style: normal;
+    font-size: 22px;
   }
 
   @media (min-width: 900px) {
@@ -176,7 +193,7 @@ const { myData } = Astro.props;
       font-size: 20px;
       margin-top: -40px;
     }
-    .txt2 {
+    .citat {
       order: 2;
       width: 50%;
       text-align: center;
@@ -192,7 +209,7 @@ const { myData } = Astro.props;
       padding-bottom: 7%;
       padding-top: 10%;
     }
-    .txt2_1 {
+    .citat_af {
       padding-top: 20px;
     }
     .kundecitat p {
