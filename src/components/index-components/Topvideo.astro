@@ -1,58 +1,93 @@
 ---
 import "../../css/generel.css";
 ---
+<body>
 
-<article>
-  <div class="video">
-    <video src="/mp4/forsidevideo_1.mp4" autoplay loop muted></video>
-  </div>
+  <section class="banner">
+      <div class="banner-video">
+          <video autoplay loop muted src="">
+          </video>
+      </div>
+      <div class="banner-text">
+          <h1>SOME OTHER WAVES</h1>
+          <p>Unik evighedskunst på vægge og lofter der liver dit rum op. Håndmalet af tvillingesøstrene Carla og Bjørk
+              Nørremark.</p>
+      </div>
+      <a href="#specific-spot" class="pil"> <img src="/svg/pil.svg" alt="pil" /></a>
+  </section>
 
-  <div id="specific-spot"></div>
+</body>
 
-  <a href="#specific-spot" class="pil"> <img src="/svg/pil.svg" alt="pil" /></a>
-</article>
 
 <style>
-  /*Mobil*/
-
-  .video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    overflow: hidden;
-    
-  }
-  .video video{
-    max-width: 100%;
-  }
-  .pil {
-   display: none;
-  }
-
-  /*Desktop*/
-  @media (min-width: 900px) {
-    body,
-    html {
+  * {
       margin: 0;
       padding: 0;
-      width: 100%;
-      height: 100%;
-    }
+      box-sizing: border-box;
+  }
 
-    .video {
+
+  .banner {
+      position: relative;
+      height: 100vh;
+  }
+
+  .banner-video {
+      position: absolute;
+      overflow: hidden;
+      z-index: -1;
       width: 100%;
       height: 100%;
       object-fit: cover;
-      overflow: hidden;
-    }
-
-    .pil {
-        display: block;
-    width: 50px
-    left: 700px;
-    position: absolute;
-    top: 700px;
-    left:50%
   }
+
+  .banner-video video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      min-height: 100%;
+      max-width: 100%;
+  }
+
+  .banner-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      z-index: 1;
+      color: #fff;
+  }
+
+  .banner-text h1 {
+      margin-bottom: 20px;
+  }
+
+  .banner-text p {
+      font-size: 20px;
+      margin-bottom: 30px;
+      color: #00054E;
+  }
+
+  
+  .pil {
+      display: block;
+      width: 50px left: 700px;
+      position: absolute;
+      top: 600px;
+      left: 50%;
+  }
+
+  @media (max-width: 900px) {
+
+      .banner-text p {
+          font-size: 16px;
+          color: #00054E;
+      }
+
+      .pil {
+          display: none;
+      }
   }
 </style>
