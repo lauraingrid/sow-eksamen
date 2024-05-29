@@ -14,10 +14,12 @@ import Forsideheader from "../Forsideheader.astro";
     </div>
      
       <div class="banner-text">
-       
+       <div class="overskrift">
           <h1>SOME OTHER WAVES</h1>
-          <p>Unik evighedskunst på vægge og lofter der liver dit rum op. Håndmalet af tvillingesøstrene Carla og Bjørk
-              Nørremark.</p>
+        </div>
+        <div class="underoverskrift">
+          <p>Unik evighedskunst på vægge og lofter, håndmalet af tvillingesøstrene Carla og Bjørk.</p>
+            </div>
       </div>
       <div id="specific-spot"></div>
       <a href="#specific-spot" class="pil"> <img src="/svg/pil.svg" alt="pil" /></a>
@@ -78,14 +80,17 @@ import Forsideheader from "../Forsideheader.astro";
 
   .banner-text h1 {
       margin-bottom: 20px;
-      font-size: 80px;
+      font-size: 100px;
+  }
+
+  .overskrift{
+    min-width: 100rem;
   }
 
   .banner-text p {
       font-size: 20px;
       margin-bottom: 30px;
       color: #00054E;
-
   }
 
   
