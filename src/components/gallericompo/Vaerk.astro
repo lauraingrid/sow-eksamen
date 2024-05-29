@@ -19,5 +19,19 @@ const { data } = Astro.props;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border: 2px solid #ffffff00;
+    transition: 1s ease;
+    opacity: 0.88;
+    transition: 1s ease;
+  }
+
+  img:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    transition: 1s ease;
+    border: 5px solid var(--hvid);
+    opacity: 1;
+    transition: 1s ease;
   }
 </style>
