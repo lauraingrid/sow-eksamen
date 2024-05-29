@@ -3,7 +3,7 @@ const { data } = Astro.props;
 ---
 
 <!-- Dette komponent er til de enkelte billeder i galleriet, hvor den bare henter hvert billede og gør det klikbart til singleview -->
-<a href={`kunde/${data.id}`}>
+<a href={`src/pages/kunde/${data.id}`}>
   <article>
     <img src={"/img/" + data.image} alt="billede af kundes værk" />
   </article>
