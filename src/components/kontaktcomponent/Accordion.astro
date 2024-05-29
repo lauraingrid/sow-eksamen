@@ -1,0 +1,177 @@
+---
+import "../../css/generel.css";
+---
+
+<div class="overskrift">
+  <h2>Ofte stillede spørgsmål</h2>
+</div>
+
+<section class="flex">
+  <div class="flex_acc center">
+    <details>
+      <summary> Hvilken maling maler i med ?</summary>
+      <article>
+        <p>Vi maler med acryl-vægmaling fra Beck & Jørgensen med EU Ecolabel.</p>
+      </article>
+    </details>
+
+    <details>
+      <summary>Maler I i hele Danmark ?</summary>
+      <article>
+        <p>Ja, vi tager offentlig transport rundt i hele landet og transportudgifterne kommer oveni den samlede pris. Vi køber de billigste billetter.</p>
+      </article>
+    </details>
+
+    <details>
+      <summary>Maler i også udendørs ?</summary>
+      <article>
+        <p>Nej, det gør vi ikke, da malerierne ville skulle kunne holde til alt slags vejr.</p>
+      </article>
+    </details>
+
+    <details>
+      <summary>Kan man selv vælge baggrundsfarve ?</summary>
+      <article>
+        <p>Hvis du ønsker en bestemt baggrundsfarve, skal du selv have malet overfladen, inden vi kommer.</p>
+      </article>
+    </details>
+
+    <details>
+      <summary>Hvem sørger for materialer ?</summary>
+      <article>
+        <p>Vi medbringer selv maling og pensler</p>
+      </article>
+    </details>
+
+    <details>
+      <summary>Hvad skal jeg have klar inden i kommer ?</summary>
+      <article>
+        <p>Du skal have dækket gulvet af omkring det sted vi skal male og sørger for stiger/ evt. stillads.</p>
+      </article>
+    </details>
+
+    <details>
+      <summary>Hvor lang tid ventetid er der ?</summary>
+      <article>
+        <p>Du skal kontakte os 1-2 måneder før, så vi kan sætte en dato af til dig.</p>
+      </article>
+    </details>
+
+    <details>
+      <summary>Kan man have indflydelse på farver og motiver I maler ?</summary>
+      <article>
+        <p>Du kan sagtens få indflydelse på farvevalg. Hav gerne nogle screenshots af tidligere værker vi har malet klar når vi kommer. Vi maler kun motiver inde for vores motivverden af menneskekroppe, havelementer og organiske former. Dialog om farver sker på selve male-dagen</p>
+      </article>
+    </details>
+  </div>
+</section>
+
+<style>
+  .overskrift {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+  }
+  h2 {
+    color: var(--skrift);
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 2rem;
+    border-bottom: 1px var(--skrift) solid;
+    width: 500px;
+    text-indent: 5px;
+  }
+
+  details,
+  summary,
+  article {
+    width: 500px;
+    margin-bottom: 0.9rem;
+    font-weight: bold;
+    color: var(--skrift);
+    font-family: "yeldevi";
+  }
+
+  summary {
+    font-size: 20px;
+  }
+
+  p {
+    font-family: "eb";
+    font-weight: 100;
+    line-height: 1.9;
+    padding-top: 20px;
+  }
+
+  summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    list-style: none;
+    margin-bottom: 0;
+    padding: 0.5rem;
+    border-bottom: 1px var(--skrift) solid;
+    font-weight: bold;
+  }
+
+  /* pil efter tekst */
+  summary::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 0.5rem solid var(--skrift);
+    border-inline: 0.4rem solid transparent;
+  }
+
+  details[open] > summary::after {
+    transform: rotate(-180deg);
+  }
+
+  article {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  ol {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .flex_acc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    z-index: 10;
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 120px;
+  }
+
+  @media (min-width: 900px) {
+    details,
+    summary,
+    article {
+      width: 900px;
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      width: 900px;
+      text-indent: 5px;
+    }
+  }
+
+  /* Arrow icon */
+</style>
