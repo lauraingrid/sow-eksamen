@@ -4,7 +4,6 @@ import Singlecta from "../../components/singlecompo/Singlecta.astro";
 import Footer from "../../components/Footer.astro";
 import "../../css/generel.css";
 
-
 export async function getStaticPaths() {
   const data = await fetch("https://vmhyyycabwkqiceqvlmp.supabase.co/rest/v1/sow_data", {
     method: "GET",
@@ -23,6 +22,10 @@ export async function getStaticPaths() {
 
 const { myData } = Astro.props;
 ---
+
+<head>
+  <link rel="icon" type="image/svg+xml" href="/public/favicon.svg" />
+</head>
 
 <!-- for at dataen kan skrive æ ø og å er dette sat ind -->
 <meta charset="UTF-8" />
