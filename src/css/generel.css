@@ -45,31 +45,37 @@ html {
 h1 {
   font-size: 32px;
   font-family: "yeldevi";
+  font-display: auto;
 }
 
 h2 {
   font-size: 24px;
   font-family: "yeldevi";
+  font-display: auto;
 }
 
 h3 {
   font-size: 18px;
   font-family: "yeldevi";
+  font-display: auto;
 }
 
 h4 {
   font-size: 16px;
   font-family: "yeldevi";
+  font-display: auto;
 }
 
 h5 {
   font-size: 16px;
   font-family: "yeldevi";
+  font-display: auto;
 }
 
 p {
   font-size: 16px;
   font-family: "eb";
+  font-display: auto;
 }
 
 #scrollToTopBtn {
