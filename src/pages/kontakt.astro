@@ -2,8 +2,6 @@
 import MainLayout from "../layout/MainLayout.astro";
 import Header from "../components/Header.astro";
 import Process from "../components/index-components/Process.astro";
-import Linjer from "../components/kontaktcomponent/Linjer.astro";
-import Linj from "../components/kontaktcomponent/Linj.astro";
 import Forms from "../components/kontaktcomponent/Forms.astro";
 import Kontaktinfo from "../components/kontaktcomponent/Kontaktinfo.astro";
 import Footer from "../components/Footer.astro";
@@ -16,10 +14,10 @@ import Accordion from "../components/kontaktcomponent/Accordion.astro";
   <Kontaktinfo />
   <Process />
   <Accordion />
-   <a href="#hero">
+  <a href="#hero">
     <button onclick="topFunction()" id="scrollToTopBtn" title="Gå til toppen">
       <span class="arrow-up"></span>
-  </button>
+    </button>
   </a>
   <Footer />
 </MainLayout>
@@ -27,7 +25,7 @@ import Accordion from "../components/kontaktcomponent/Accordion.astro";
 <style>
   p,
   h3 {
-    color: #00054e;
+    color: var(--skrift);
   }
   .faq_wrapper {
     margin-left: 12rem;
