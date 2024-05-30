@@ -4,6 +4,7 @@ import Singlecta from "../../components/singlecompo/Singlecta.astro";
 import Footer from "../../components/Footer.astro";
 import "../../css/generel.css";
 
+
 export async function getStaticPaths() {
   const data = await fetch("https://vmhyyycabwkqiceqvlmp.supabase.co/rest/v1/sow_data", {
     method: "GET",
