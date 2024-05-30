@@ -10,8 +10,10 @@ import Knap from "../Knap.astro";
     <p>Om du ønsker et smukt maleri i dit hjem, eller på din arbejdsplads, står vi klar til at tage imod din forspørgsel her</p>
 
     <form class="formsektion">
-      <label for="fname">Navn</label><br />
+
+      <label for="name">Navn</label><br />
       <input type="text" id="name" name="name" /><br />
+
       <label for="tel">Telefonnummer</label><br />
       <input type="tel" id="tel" name="tel" />
       <br />
@@ -30,8 +32,8 @@ import Knap from "../Knap.astro";
           <br />
         </div>
       </div>
-      <label for="number">Hvor mange m2 vil du have malet?</label><br />
-      <input type="text" id="number" name="number" />
+      <label for="meter">Hvor mange m2 vil du have malet?</label><br />
+      <input type="text" id="meter" name="meter" />
       <br />
     </form>
 
@@ -106,7 +108,7 @@ import Knap from "../Knap.astro";
     margin-bottom: 1rem;
   }
   .formsektion label {
-    opacity: 50%;
+    opacity: 80%;
   }
 
   .knap {
