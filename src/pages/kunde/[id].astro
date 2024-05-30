@@ -24,21 +24,25 @@ const { myData } = Astro.props;
 ---
 
 <head>
+  <meta charset="utf-8" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="robots" content="noindex" />
+  <meta name="generator" content={Astro.generator} />
+  <link rel="stylesheet" href="../css/generel.css" />
+  <title>Some Other Waves</title>
+  <meta name="description" content="Oplev kunsten fra Some Other Waves, en innovativ virksomhed drevet af tvillingesøstrene Bjørk og Carla Nørremark. De specialiserer sig i lofts- og vægmalerier med havinspirerede designs til både private og virksomheder" />
 </head>
-
-<!-- for at dataen kan skrive æ ø og å er dette sat ind -->
-<meta charset="UTF-8" />
 
 <article>
   <Header />
   <a class="pil" href="/galleri">
-    <img src="/svg/venstre_pil.svg" alt="Tryk tilbage på pil" />
+    <img src="/svg/venstre_pil.svg" alt="Tryk tilbage på pil" width="90px" />
   </a>
   <!-- Kundeinfo -->
   <article>
     <div class="grid1">
-      <img src={"/img/" + myData.image} alt="billede af værk" />
+      <img src={"/img/" + myData.image} alt="billede af værk" width="487px" height="487px" />
       <div class="grid1txt">
         <h1>{myData.navn}</h1>
         <br />
@@ -62,7 +66,7 @@ const { myData } = Astro.props;
           </p>
           <p class="citat_af">- {myData.citataf}</p>
         </div>
-        <img src="/svg/muslinger1.svg" alt="muslinger" />
+        <img src="/svg/muslinger1.svg" alt="muslinger" width="50%" height="50%" />
       </div>
     </div>
   </article>
@@ -114,6 +118,7 @@ const { myData } = Astro.props;
 
   .pil img {
     padding: 30px;
+    width: 90px;
   }
   @media (min-width: 900px) {
     .grid1 {
