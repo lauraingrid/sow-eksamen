@@ -8,10 +8,10 @@ import Footer from "../components/Footer.astro";
   <Header />
   <section class="tak">
     <div class="taktekst">
-      <h4 class="opacity70">Tusind tak!</h4>
-      <h2>Vi er så glade for at du har rakt ud til os!</h2>
-      <h3 class="opacity70">Vi kontakter dig hurtigst muligt med uddybende information og tilbud</h3>
-      <h4 class="opacity50">Indtil da, kan du jo følge med på vores Instagram herunder!</h4>
+      <h5 class="opacity70">Tusind tak!</h5>
+      <h3>Vi er så glade for at du har rakt ud til os!</h3>
+      <h4 class="opacity70">Vi kontakter dig hurtigst muligt med uddybende information og tilbud</h4>
+      <h5 class="opacity50">Indtil da, kan du jo følge med på vores Instagram herunder!</h5>
       <div class="someicons">
         <a href="https://www.instagram.com/someotherwaves/">
           <ion-icon name="logo-instagram"></ion-icon>
@@ -26,13 +26,13 @@ import Footer from "../components/Footer.astro";
 </MainLayout>
 
 <style>
-  .tak {
+ .tak {
     background-image: url("/public/svg/baggrundtak.svg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    height: 110dvh;
+    height: 90dvh;
     display: grid;
     color: var(--skrift);
   }
@@ -42,12 +42,15 @@ import Footer from "../components/Footer.astro";
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
-    padding: 4rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     text-align: center;
     place-self: center;
     line-height: 6rem;
-    margin: 5rem;
   }
+
 
   ion-icon {
     color: var(--skrift);
