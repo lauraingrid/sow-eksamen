@@ -12,12 +12,16 @@ import Footer from "../components/Footer.astro";
       <h2>Vi er så glade for at du har rakt ud til os!</h2>
       <h3 class="opacity70">Vi kontakter dig hurtigst muligt med uddybende information og tilbud</h3>
       <h4 class="opacity50">Indtil da, kan du jo følge med på vores Instagram herunder!</h4>
-      <img src="/public/svg/someblaa.svg" alt="hej" />
+      <div class="someicons">
+        <a href="https://www.instagram.com/someotherwaves/">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+      </div>
     </div>
   </section>
   <button onclick="topFunction()" id="scrollToTopBtn" title="Gå til toppen">
     <span class="arrow-up"></span>
-</button>
+  </button>
   <Footer />
 </MainLayout>
 
@@ -28,7 +32,7 @@ import Footer from "../components/Footer.astro";
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    height: 100dvh;
+    height: 110dvh;
     display: grid;
     color: var(--skrift);
   }
@@ -45,8 +49,14 @@ import Footer from "../components/Footer.astro";
     margin: 5rem;
   }
 
-  img {
-    width: 40px;
+  ion-icon {
+    color: var(--skrift);
+    font-size: 50px;
+    padding-top: 20px;
+  }
+
+  ion-icon:hover {
+    color: #b9cdff;
     cursor: pointer;
   }
 
@@ -73,14 +83,11 @@ import Footer from "../components/Footer.astro";
     h3 {
       margin-bottom: 1rem;
     }
-
-    img {
-      width: 30px;
-      cursor: pointer;
-    }
   }
 </style>
 
 <script>
   import "/public/scripts/scrollknap.js";
 </script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
